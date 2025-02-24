@@ -1,3 +1,5 @@
+'use client'
+import CountUp from 'react-countup';
 import Header from "@/component/common_comp/Header";
 import Footer from "@/component/common_comp/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -7,13 +9,9 @@ export default function Home() {
   return (
     < >
       <Header />
-
-
       <section class="hero-section hero-4">
-
         <div class="swiper hero-slider">
           <div class="swiper-wrapper">
-
             <div class="swiper-slide">
               <div class="hero-items">
                 <div class="plane-shape">
@@ -248,7 +246,7 @@ export default function Home() {
                 <div class="about-image wow img-custom-anim-left">
                   <img src="/img/about/03.jpg" alt="img" />
                   <div class="about-box float-bob-y">
-                    <h2><span class="odometer" data-count="29">00</span>+</h2>
+                    <h2><span class="odometer" ><CountUp end={15} /></span>+</h2>
                     <p>YEARS OF EXPERIENCE</p>
                   </div>
                 </div>

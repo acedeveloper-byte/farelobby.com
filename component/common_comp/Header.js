@@ -3,7 +3,6 @@ import React from 'react'
 const Header = () => {
     return (
         <header class="header-section header-inner">
-
             <div id="header-sticky" class="header-1 header-4">
                 <div class="container-fluid">
                     <div class="mega-menu-wrapper">
