@@ -8365,11 +8365,16 @@ p {
   font-weight: 800;
   margin-top: 5px;
   display: inline-block;
+  text-decoration: none;
 }
 .news-right-items .news-right-box .news-content .link-btn i {
+  text-decoration: none;
+
   margin-left: 10px;
 }
 .news-right-items .news-right-box .news-content .link-btn:hover {
+  text-decoration: none;
+
   color: var(--theme-color-2);
 }
 
@@ -8572,14 +8577,17 @@ p {
   margin-bottom: 20px;
 }
 .news-box-items-4 .news-content .link-btn {
+  text-decoration: none;
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 600;
   color: var(--theme-color);
   display: flex;
   align-items: center;
   gap: 15px;
 }
 .news-box-items-4 .news-content .link-btn i {
+  text-decoration: none;
+
   font-size: 21px;
 }
 

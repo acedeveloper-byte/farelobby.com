@@ -546,72 +546,52 @@ export default function Home() {
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
               <div class="news-box-items-4">
                 <div class="news-img">
-                  <img src="/img/news/news-11.jpg" alt="img" />
-                  <ul class="post-date">
-                    <li>
-                      22
-                    </li>
-                    <li>
-                      JAN
-                    </li>
-                  </ul>
+                  <img src="/img/airlines/american.png" alt="img" />
+
                 </div>
                 <div class="news-content">
                   <ul>
-                    <li> <b>By</b> Admin</li>
-                    <li><b>23</b> Comments</li>
+                    <li> <b>By</b> Farelobby</li>
+                    <li> <b>Date</b>{" "}08th Jan 25</li>
                   </ul>
-                  <h3><a href="news-details.html">The top 10 places to traveling in the world with your family</a></h3>
-                  <p>We offer carefully curated destinations and tours that capture the true essence.</p>
-                  <a href="news-details.html" class="link-btn">Continue Reading <i class="far fa-long-arrow-right"></i></a>
+                  <h3><a href="#" class="link-btn">Complete Guide to American Airlines Baggage Fares and Policies
+                  </a></h3>
+
                 </div>
               </div>
             </div>
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
               <div class="news-box-items-4">
                 <div class="news-img">
-                  <img src="/img/news/news-12.jpg" alt="img" />
-                  <ul class="post-date">
-                    <li>
-                      09
-                    </li>
-                    <li>
-                      May
-                    </li>
-                  </ul>
+                  <img src="/img/airlines/southwest.png" alt="img" />
+
                 </div>
                 <div class="news-content">
                   <ul>
-                    <li> <b>By</b> Admin</li>
-                    <li><b>23</b> Comments</li>
+                    <li> <b>By</b> Farelobby</li>
+                    <li> <b>Date</b>{" "}26th Jan 25</li>
                   </ul>
-                  <h3><a href="news-details.html">Enrich Your Mind Envision Your Future Education for Success</a></h3>
-                  <p>We offer carefully curated destinations and tours that capture the true essence.</p>
-                  <a href="news-details.html" class="link-btn">Continue Reading <i class="far fa-long-arrow-right"></i></a>
+                  <h3>
+                    <a href="#" class="link-btn">How to find best deals with Southwest Airlines Low Fare Calendar?
+                    </a>
+                  </h3>
+
                 </div>
               </div>
             </div>
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
               <div class="news-box-items-4">
                 <div class="news-img">
-                  <img src="/img/news/news-13.jpg" alt="img" />
-                  <ul class="post-date">
-                    <li>
-                      08
-                    </li>
-                    <li>
-                      APR
-                    </li>
-                  </ul>
+                  <img src="/img/airlines/spirit.png" alt="img" />
+
                 </div>
                 <div class="news-content">
                   <ul>
-                    <li> <b>By</b> Admin</li>
-                    <li><b>23</b> Comments</li>
+                    <li> <b>By</b> Farelobby</li>
+                    <li> <b>Date</b>{" "}28th Jan 25</li>
                   </ul>
-                  <h3><a href="news-details.html">Exploring The Green Spaces Of Realar Residence</a></h3>
-                  <p>We offer carefully curated destinations and tours that capture the true essence.</p>
-                  <a href="news-details.html" class="link-btn">Continue Reading <i class="far fa-long-arrow-right"></i></a>
+                  <h3><a href="#" class="link-btn">How to find low fare flight with spirit airlines?</a></h3>
+
                 </div>
               </div>
             </div>

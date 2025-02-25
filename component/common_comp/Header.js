@@ -24,15 +24,12 @@ const Header = () => {
                                                         Home
                                                         <i class="fas fa-chevron-down"></i>
                                                     </a>
-
                                                 </li>
                                                 <li class="has-dropdown active d-xl-none">
                                                     <a href="#" class="border-none">
                                                         Home
                                                     </a>
-
                                                 </li>
-
                                             </ul>
                                         </nav>
                                     </div>
