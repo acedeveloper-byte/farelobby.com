@@ -20,7 +20,7 @@ const Footer = () => {
                                 <div class="footer-widget-items">
                                     <div class="widget-title">
                                         <a href="#" class="footer-logo">
-                                            <img src="/img/logo/black-logo.svg" alt="img" />
+                                            <img src="/img/logo/colour-logo.png" alt="img" class="img-logo" />
                                         </a>
                                     </div>
                                     <div class="footer-content">
@@ -44,15 +44,7 @@ const Footer = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <h6 class="app-text">Your all-in-one travel app</h6>
-                                        <div class="apps-items">
-                                            <a href="#">
-                                                <img src="/img/apply-store.png" alt="img" />
-                                            </a>
-                                            <a href="#">
-                                                <img src="/img/play-store.jpg" alt="img" />
-                                            </a>
-                                        </div>
+
                                         <div class="social-icon">
                                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                                             <a href="#"><i class="fab fa-instagram"></i></a>
@@ -110,95 +102,7 @@ const Footer = () => {
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-4 col-md-4">
-                                <div class="footer-widget-items">
-                                    <div class="widget-title">
-                                        <h3>Gallery</h3>
-                                    </div>
-                                    <div class="footer-gallery">
-                                        <div class="gallery-wrap">
-                                            <div class="gallery-item">
-                                                <div class="thumb">
-                                                    <a href="/img/footer/gallery-1.jpg" class="img-popup">
-                                                        <img src="/img/footer/gallery-1.jpg" alt="gallery-img" />
-                                                        <div class="icon">
-                                                            <i class="far fa-plus"></i>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="thumb">
-                                                    <a href="/img/footer/gallery-2.jpg" class="img-popup">
-                                                        <img src="/img/footer/gallery-2.jpg" alt="gallery-img" />
-                                                        <div class="icon">
-                                                            <i class="far fa-plus"></i>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="thumb">
-                                                    <a href="/img/footer/gallery-3.jpg" class="img-popup">
-                                                        <img src="/img/footer/gallery-3.jpg" alt="gallery-img" />
-                                                        <div class="icon">
-                                                            <i class="far fa-plus"></i>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="gallery-item">
-                                                <div class="thumb">
-                                                    <a href="/img/footer/gallery-4.jpg" class="img-popup">
-                                                        <img src="/img/footer/gallery-4.jpg" alt="gallery-img" />
-                                                        <div class="icon">
-                                                            <i class="far fa-plus"></i>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="thumb">
-                                                    <a href="/img/footer/gallery-5.jpg" class="img-popup">
-                                                        <img src="/img/footer/gallery-5.jpg" alt="gallery-img" />
-                                                        <div class="icon">
-                                                            <i class="far fa-plus"></i>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="thumb">
-                                                    <a href="/img/footer/gallery-6.jpg" class="img-popup">
-                                                        <img src="/img/footer/gallery-6.jpg" alt="gallery-img" />
-                                                        <div class="icon">
-                                                            <i class="far fa-plus"></i>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="gallery-item">
-                                                <div class="thumb">
-                                                    <a href="/img/footer/gallery-7.jpg" class="img-popup">
-                                                        <img src="/img/footer/gallery-7.jpg" alt="gallery-img" />
-                                                        <div class="icon">
-                                                            <i class="far fa-plus"></i>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="thumb">
-                                                    <a href="/img/footer/gallery-8.jpg" class="img-popup">
-                                                        <img src="/img/footer/gallery-8.jpg" alt="gallery-img" />
-                                                        <div class="icon">
-                                                            <i class="far fa-plus"></i>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="thumb">
-                                                    <a href="/img/footer/gallery-9.jpg" class="img-popup">
-                                                        <img src="/img/footer/gallery-9.jpg" alt="gallery-img" />
-                                                        <div class="icon">
-                                                            <i class="far fa-plus"></i>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -206,7 +110,7 @@ const Footer = () => {
                     <div class="container">
                         <div class="footer-bottom-wrapper">
                             <p class="wow fadeInUp" data-wow-delay=".3s">
-                                © 2025 Travil LLC All rights reserved.
+                                © 2025 Farelobby A  ll rights reserved.
                             </p>
                             <ul class="footer-menu wow fadeInUp" data-wow-delay=".5s">
                                 <li>

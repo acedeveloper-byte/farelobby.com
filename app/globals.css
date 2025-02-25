@@ -2155,6 +2155,11 @@ p {
   margin-bottom: -120px;
 }
 @media (max-width: 1600px) {
+  
+  .img-logo {
+    width: 70%;
+    height: auto;
+  }
   .hero-1 .hero-image {
     width: 800px;
     height: 800px;
@@ -2162,12 +2167,22 @@ p {
   }
 }
 @media (max-width: 1399px) {
+  
+  .img-logo {
+    width: 70%;
+    height: auto;
+  }
   .hero-1 .hero-image {
     width: 700px;
     height: 700px;
   }
 }
 @media (max-width: 1199px) {
+    
+  .img-logo {
+    width: 70%;
+    height: auto;
+  }
   .hero-1 .hero-image {
     margin-left: 0;
     margin-bottom: 0;
@@ -2177,30 +2192,55 @@ p {
   }
 }
 @media (max-width: 991px) {
+  
+  .img-logo {
+    width: 70%;
+    height: auto;
+  }
   .hero-1 .hero-image {
     width: 650px;
     height: 650px;
   }
 }
 @media (max-width: 767px) {
+
+  .img-logo {
+    width: 70%;
+    height: auto;
+  }
   .hero-1 .hero-image {
     width: 550px;
     height: 550px;
   }
 }
 @media (max-width: 575px) {
+  
+  .img-logo {
+    width: 70%;
+    height: auto;
+  }
   .hero-1 .hero-image {
     width: 450px;
     height: 450px;
   }
 }
 @media screen and (max-width: 500px) {
+  
+  .img-logo {
+    width: 70%;
+    height: auto;
+  }
   .hero-1 .hero-image {
     width: 400px;
     height: 400px;
   }
 }
 @media (max-width: 470px) {
+  
+  .img-logo {
+    width: 70%;
+    height: auto;
+  }
   .hero-1 .hero-image {
     width: 300px;
     height: 300px;
@@ -2218,16 +2258,31 @@ p {
   padding: 250px 0 200px;
 }
 @media (max-width: 991px) {
+ 
+  .img-logo {
+    width: 70%;
+    height: auto;
+  }
   .hero-2 {
     padding: 200px 0 160px;
   }
 }
 @media (max-width: 767px) {
+  
+  .img-logo {
+    width: 70%;
+    height: auto;
+  }
   .hero-2 {
     padding: 170px 0 140px;
   }
 }
 @media (max-width: 575px) {
+  
+  .img-logo {
+    width: 70%;
+    height: auto;
+  }
   .hero-2 {
     padding: 150px 0 120px;
   }
@@ -2495,15 +2550,30 @@ p {
   .hero-3 .destination-box-items .booking-list-area .form-clt .nice-select::after {
     right: -80px;
   }
+  
+  .img-logo {
+    width: 70%;
+    height: auto;
+  }
 }
 @media (max-width: 1199px) {
   .hero-3 .destination-box-items .booking-list-area .form-clt .nice-select::after {
     right: -100px;
   }
+  
+  .img-logo {
+    width: 70%;
+    height: auto;
+  }
 }
 @media (max-width: 470px) {
   .hero-3 .destination-box-items .booking-list-area .form-clt .nice-select::after {
     right: -50px;
+  }
+
+  .img-logo {
+    width: 70%;
+    height: auto;
   }
 }
 .hero-3 .destination-box-items .booking-list-area .form-clt .nice-select .list {
@@ -2572,6 +2642,11 @@ p {
   left: 20%;
 }
 @media (max-width: 1399px) {
+  
+  .img-logo {
+    width: 70%;
+    height: auto;
+  }
   .hero-4 .hero-items .plane-shape {
     display: none;
   }
@@ -2582,6 +2657,11 @@ p {
   right: 15%;
 }
 @media (max-width: 1399px) {
+  
+  .img-logo {
+    width: 70%;
+    height: auto;
+  }
   .hero-4 .hero-items .plane-shape-2 {
     display: none;
   }
