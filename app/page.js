@@ -307,7 +307,7 @@ export default function Home() {
         <div class="container">
           <div class="section-title text-center">
             <span class="wow fadeInUp" data-wow-delay=".3s">Latest Blog & News</span>
-            <h2 class="wow fadeInUp" data-wow-delay=".5s">Latest Travel Insights and <br /> Destination Guides</h2>
+            <h2 class="wow fadeInUp" data-wow-delay=".5s">Latest Travel Insights</h2>
           </div>
           <div class="row">
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
