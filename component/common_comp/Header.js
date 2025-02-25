@@ -10,7 +10,7 @@ const Header = () => {
                             <div class="header-left">
                                 <div class="logo">
                                     <a href="#" class="header-logo">
-                                        <img src="/img/logo/black-logo.svg" alt="logo-img" />
+                                        <img src="/img/logo/colour-logo.png" alt="logo-img" />
                                     </a>
                                 </div>
                             </div>
