@@ -421,41 +421,46 @@ export default function Home() {
 
                     {/* FAQ Item 1 */}
                     <Accordion.Item eventKey="0" className="accordion-item wow fadeInUp" data-wow-delay=".2s">
-                      <Accordion.Header>How do I book a trip?</Accordion.Header>
+                      <Accordion.Header>What are the different fare types offered by American Airlines?</Accordion.Header>
                       <Accordion.Body className="accordion-body">
-                        Our attraction pass saves you more than buying individual tickets for your tour package system. We offer a wide range of digital services, including website design and development, and e-commerce solutions.
+                        American Airlines offers different fare types like Basic Economy and the Main Cabin. Basic Economy is the lowest of all fares available. It has some specific limitations regarding seats, refunds, and more. Whereas Main Cabin offers those privileges.
                       </Accordion.Body>
                     </Accordion.Item>
 
                     {/* FAQ Item 2 */}
                     <Accordion.Item eventKey="1" className="accordion-item wow fadeInUp" data-wow-delay=".4s">
-                      <Accordion.Header>Can I customize my itinerary?</Accordion.Header>
+                      <Accordion.Header>Why does Spirit Airlines Charge Such Low Fares?</Accordion.Header>
                       <Accordion.Body className="accordion-body">
-                        Yes, you can customize your itinerary based on your preferences. Contact our support team for personalized trip planning.
+                        The Ultra-low-cost fares from Spirit Airlines are at the extremely low end. But Spirit charges for every other facility such as seat selection, carry-on bags, drinks, and more. The very low fare leaves it to the passengers to pay for whatever services they want to incur. This keeps their ticket prices a little low.
                       </Accordion.Body>
                     </Accordion.Item>
 
                     {/* FAQ Item 3 */}
                     <Accordion.Item eventKey="2" className="accordion-item wow fadeInUp" data-wow-delay=".6s">
-                      <Accordion.Header>Is travel insurance included in the package?</Accordion.Header>
+                      <Accordion.Header>Are United Airlines Flight Tickets refundable? </Accordion.Header>
                       <Accordion.Body className="accordion-body">
-                        Travel insurance is optional and can be added at checkout. We recommend getting travel insurance for peace of mind.
+                        United Airlines Refunds depend on the fare type purchased during booking. Non-refundable fares are usually not refunded unless a cancellation is due to something on the part of the airline. Otherwise, travelers may get a travel credit or reschedule without any fee in some cases, especially with flexible fares or if they cancel within a given time window.
                       </Accordion.Body>
                     </Accordion.Item>
 
                     {/* FAQ Item 4 */}
                     <Accordion.Item eventKey="3" className="accordion-item wow fadeInUp" data-wow-delay=".7s">
-                      <Accordion.Header>How do I make changes to my booking?</Accordion.Header>
+                      <Accordion.Header>Is there any fare charge for checked bags?
+                      </Accordion.Header>
                       <Accordion.Body className="accordion-body">
-                        You can modify your booking through your account dashboard or contact our support team for assistance.
+                        Southwest Airlines features initial two checked bags for free which is an advantage to passengers. It also offers many customer-friendly policies, although one may still have to pay extra charges for overweight or oversized luggage.
+
+
                       </Accordion.Body>
                     </Accordion.Item>
 
                     {/* FAQ Item 5 */}
                     <Accordion.Item eventKey="4" className="accordion-item mb-0 wow fadeInUp" data-wow-delay=".8s">
-                      <Accordion.Header>What’s included in my travel package?</Accordion.Header>
+                      <Accordion.Header>Does Frontier Airlines offer Refundable Fares?
+                      </Accordion.Header>
                       <Accordion.Body className="accordion-body">
-                        Your travel package includes accommodation, transportation, guided tours, and exclusive deals on attractions.
+                        Tickets are non-refundable generally on Frontier Airlines. Additionally, at the booking time, an option called "Cancellation Protection" is introduced that allows flexibility in traveling. If you cancel or change your itinerary, this option can provide a refund or credit based on certain conditions that apply to it.
+
                       </Accordion.Body>
                     </Accordion.Item>
 
