@@ -69,7 +69,7 @@ const Header = ({ sectionRef, contactRef, blogRef }) => {
                                     </div>
                                     <div class="content">
                                         <span>Call Us</span>
-                                        <h6><a href="tel:+8809533309">+88 (09) 53 33 09</a></h6>
+                                        <h6><a href="tel:++18554973456">+1(855) 497-3456</a></h6>
                                     </div>
                                 </div>
                                 <div class="header-search">

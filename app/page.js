@@ -1,4 +1,5 @@
 'use client'
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import CountUp from 'react-countup';
 import Header from "@/component/common_comp/Header";
 import Footer from "@/component/common_comp/Footer";

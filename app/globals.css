@@ -4032,16 +4032,14 @@ p {
 .destination-details-wrapper .details-post .details-content .faq-items .accordion-item .accordion-header .accordion-button::after {
   content: "\f078";
   background: transparent;
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 300;
+ font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free";  font-weight: 300;
   transition: all 0.3s ease-in-out !important;
   color: var(--header);
 }
 .destination-details-wrapper .details-post .details-content .faq-items .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
   content: "\f077";
   background: transparent;
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 300;
+ font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free";  font-weight: 300;
   transform: rotate(0);
   color: var(--theme-color);
 }
@@ -4266,8 +4264,7 @@ p {
 .tour-sidebar-area .booking-list-area .tour-sidebar-widget .languages-list li .checkbox-single .checkbox-area input:checked ~ .checkmark::after {
   content: "\f00c";
   position: absolute;
-  font-family: "Font Awesome 5 Pro";
-  top: -5px;
+ font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free";  top: -5px;
   left: 5px;
   color: var(--theme-color);
   font-size: 11px;
@@ -4324,8 +4321,7 @@ p {
 .tour-sidebar-area .booking-list-area .tour-sidebar-widget .checkbox-items .checkbox-single .checkbox-area input:checked ~ .checkmark::after {
   content: "\f00c";
   position: absolute;
-  font-family: "Font Awesome 5 Pro";
-  top: -5px;
+ font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free";  top: -5px;
   left: 5px;
   color: var(--theme-color);
   font-size: 11px;
@@ -5860,8 +5856,7 @@ p {
 .tour-details-wrapper .tour-details-sidebar .tour-sidebar-items .form-list li .form-clt .checkbox-single .checkbox-area input:checked ~ .checkmark::after {
   content: "\f00c";
   position: absolute;
-  font-family: "Font Awesome 5 Pro";
-  top: -5px;
+ font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free";  top: -5px;
   left: 5px;
   color: var(--theme-color);
   font-size: 11px;
@@ -5987,8 +5982,7 @@ p {
 .tour-details-wrapper .tour-details-sidebar .tour-sidebar-items .extra-items .checkbox-single .checkbox-area input:checked ~ .checkmark::after {
   content: "\f00c";
   position: absolute;
-  font-family: "Font Awesome 5 Pro";
-  top: -5px;
+ font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free";  top: -5px;
   left: 5px;
   color: var(--theme-color);
   font-size: 11px;
@@ -7076,16 +7070,14 @@ p {
 .faq-items .accordion-item .accordion-header .accordion-button::after {
   content: "\f078";
   background: transparent;
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 300;
+ font-family: "Font Awesome 5 Free";  font-weight: 300;
   transition: all 0.3s ease-in-out !important;
   color: var(--header);
 }
 .faq-items .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
   content: "\f077";
   background: transparent;
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 300;
+  font-family:  "Font Awesome 5 Free";  font-weight: 300;
   transform: rotate(0);
   color: var(--theme-color);
 }
@@ -8758,8 +8750,7 @@ p {
   right: 30px;
   font-size: 110px;
   line-height: 1;
-  font-family: "Font Awesome 5 Pro";
-  position: absolute;
+ font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free";  position: absolute;
   content: "\f10d";
   bottom: -20px;
   color: var(--white);
@@ -8971,8 +8962,7 @@ p {
   position: absolute;
   left: 0;
   top: 0;
-  font-family: "Font Awesome 5 Pro";
-  content: "\f00c";
+ font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free";  content: "\f00c";
   color: var(--theme-color);
 }
 .blog-wrapper .single-blog-post .post-content ol {
