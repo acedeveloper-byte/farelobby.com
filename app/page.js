@@ -410,7 +410,6 @@ export default function Home() {
         <div class="container">
           <div class="section-title style-2 text-center">
             <span class="wow fadeInUp">Frequently Asked Questions</span>
-            <h2 class="wow fadeInUp" data-wow-delay=".3s">Transforming Vision into <br /> Reality Together</h2>
           </div>
 
           <Row>
