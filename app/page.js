@@ -2,9 +2,8 @@
 import CountUp from 'react-countup';
 import Header from "@/component/common_comp/Header";
 import Footer from "@/component/common_comp/Footer";
-
-
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { useRef } from 'react';
 
 
