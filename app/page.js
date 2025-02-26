@@ -3,7 +3,7 @@ import CountUp from 'react-countup';
 import Header from "@/component/common_comp/Header";
 import Footer from "@/component/common_comp/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { Accordion, Container, Row, Col } from "react-bootstrap";
 import { useRef } from 'react';
 
 
@@ -395,6 +395,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section class="faq-section section-padding fix">
         <div class="plane-shape">
           <img src="/img/faq/plane-shape.png" alt="img" />
@@ -410,147 +411,58 @@ export default function Home() {
             <span class="wow fadeInUp">Frequently Asked Questions</span>
             <h2 class="wow fadeInUp" data-wow-delay=".3s">Transforming Vision into <br /> Reality Together</h2>
           </div>
-          <div className="row">
-            <div className="col-lg-12">
+
+          <Row>
+            <Col lg={12}>
               <div className="faq-items style-2">
                 <div className="faq-accordion">
-                  <div className="accordion" id="accordionExample">
+                  <Accordion defaultActiveKey="0" id="accordion2">
 
                     {/* FAQ Item 1 */}
-                    <div className="accordion-item">
-                      <h5 className="accordion-header" id="headingOne">
-                        <button
-                          className="accordion-button"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseOne"
-                          aria-expanded="true"
-                          aria-controls="collapseOne"
-                        >
-                          How do I book a trip?
-                        </button>
-                      </h5>
-                      <div
-                        id="collapseOne"
-                        className="accordion-collapse collapse show"
-                        aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div className="accordion-body">
-                          Our attraction pass saves you more than buying individual tickets for your tour package system. We offer a wide range of digital services, including website design and development, e-commerce solutions.
-                        </div>
-                      </div>
-                    </div>
+                    <Accordion.Item eventKey="0" className="accordion-item wow fadeInUp" data-wow-delay=".2s">
+                      <Accordion.Header>How do I book a trip?</Accordion.Header>
+                      <Accordion.Body className="accordion-body">
+                        Our attraction pass saves you more than buying individual tickets for your tour package system. We offer a wide range of digital services, including website design and development, and e-commerce solutions.
+                      </Accordion.Body>
+                    </Accordion.Item>
 
                     {/* FAQ Item 2 */}
-                    <div className="accordion-item">
-                      <h5 className="accordion-header" id="headingTwo">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseTwo"
-                          aria-expanded="false"
-                          aria-controls="collapseTwo"
-                        >
-                          Can I customize my itinerary?
-                        </button>
-                      </h5>
-                      <div
-                        id="collapseTwo"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div className="accordion-body">
-                          Yes, you can customize your itinerary based on your preferences. Contact our support team for personalized trip planning.
-                        </div>
-                      </div>
-                    </div>
+                    <Accordion.Item eventKey="1" className="accordion-item wow fadeInUp" data-wow-delay=".4s">
+                      <Accordion.Header>Can I customize my itinerary?</Accordion.Header>
+                      <Accordion.Body className="accordion-body">
+                        Yes, you can customize your itinerary based on your preferences. Contact our support team for personalized trip planning.
+                      </Accordion.Body>
+                    </Accordion.Item>
 
                     {/* FAQ Item 3 */}
-                    <div className="accordion-item">
-                      <h5 className="accordion-header" id="headingThree">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseThree"
-                          aria-expanded="false"
-                          aria-controls="collapseThree"
-                        >
-                          Is travel insurance included in the package?
-                        </button>
-                      </h5>
-                      <div
-                        id="collapseThree"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="headingThree"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div className="accordion-body">
-                          Travel insurance is optional and can be added at checkout. We recommend getting travel insurance for peace of mind.
-                        </div>
-                      </div>
-                    </div>
+                    <Accordion.Item eventKey="2" className="accordion-item wow fadeInUp" data-wow-delay=".6s">
+                      <Accordion.Header>Is travel insurance included in the package?</Accordion.Header>
+                      <Accordion.Body className="accordion-body">
+                        Travel insurance is optional and can be added at checkout. We recommend getting travel insurance for peace of mind.
+                      </Accordion.Body>
+                    </Accordion.Item>
 
                     {/* FAQ Item 4 */}
-                    <div className="accordion-item">
-                      <h5 className="accordion-header" id="headingFour">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseFour"
-                          aria-expanded="false"
-                          aria-controls="collapseFour"
-                        >
-                          How do I make changes to my booking?
-                        </button>
-                      </h5>
-                      <div
-                        id="collapseFour"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="headingFour"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div className="accordion-body">
-                          You can modify your booking through your account dashboard or contact our support team for assistance.
-                        </div>
-                      </div>
-                    </div>
+                    <Accordion.Item eventKey="3" className="accordion-item wow fadeInUp" data-wow-delay=".7s">
+                      <Accordion.Header>How do I make changes to my booking?</Accordion.Header>
+                      <Accordion.Body className="accordion-body">
+                        You can modify your booking through your account dashboard or contact our support team for assistance.
+                      </Accordion.Body>
+                    </Accordion.Item>
 
                     {/* FAQ Item 5 */}
-                    <div className="accordion-item">
-                      <h5 className="accordion-header" id="headingFive">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseFive"
-                          aria-expanded="false"
-                          aria-controls="collapseFive"
-                        >
-                          What’s included in my travel package?
-                        </button>
-                      </h5>
-                      <div
-                        id="collapseFive"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="headingFive"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div className="accordion-body">
-                          Your travel package includes accommodation, transportation, guided tours, and exclusive deals on attractions.
-                        </div>
-                      </div>
-                    </div>
+                    <Accordion.Item eventKey="4" className="accordion-item mb-0 wow fadeInUp" data-wow-delay=".8s">
+                      <Accordion.Header>What’s included in my travel package?</Accordion.Header>
+                      <Accordion.Body className="accordion-body">
+                        Your travel package includes accommodation, transportation, guided tours, and exclusive deals on attractions.
+                      </Accordion.Body>
+                    </Accordion.Item>
 
-                  </div>
+                  </Accordion>
                 </div>
               </div>
-            </div>
-          </div>
+            </Col>
+          </Row>
         </div>
       </section>
 
