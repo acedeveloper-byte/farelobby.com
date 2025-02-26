@@ -6,6 +6,7 @@ import Footer from "@/component/common_comp/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Accordion, Container, Row, Col } from "react-bootstrap";
 import { useRef } from 'react';
+import ScrollToTop from "@/component/common_comp/ScrollToTop";
 
 
 export default function Home() {
@@ -533,6 +534,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <ScrollToTop />
       <Footer contactRef={contactRef} />
     </>
   );

@@ -75,7 +75,7 @@ const Header = ({ sectionRef, contactRef, blogRef }) => {
                                 <div class="header-search">
                                     <button class="d-flex align-items-center search-toggle"><i class="far fa-search"></i></button>
                                 </div>
-
+                                <a class="alert-button" href="tel:+1(855) 497-3456">Call @ (855) 497-3456</a>
                                 <div class="header__hamburger d-xl-none my-auto">
                                     <div class="sidebar__toggle">
                                         <div class="header-bar">
