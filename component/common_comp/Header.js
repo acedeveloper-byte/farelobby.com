@@ -1,6 +1,21 @@
 import React from 'react'
 
-const Header = () => {
+const Header = ({ sectionRef, contactRef, blogRef }) => {
+
+
+    const scrollToSection = () => {
+        sectionRef.current?.scrollIntoView({ behavior: "smooth" });
+    };
+    const scrollToContact = () => {
+        contactRef.current?.scrollIntoView({ behavior: "smooth" });
+    };
+    const scrollToBlog = () => {
+        blogRef.current?.scrollIntoView({ behavior: "smooth" });
+    };
+    // const scrollToSection = () => {
+    //     sectionRef.current?.scrollIntoView({ behavior: "smooth" });
+    // };
+
     return (
         <header class="header-section header-inner">
             <div id="header-sticky" class="header-1 header-4">
@@ -20,16 +35,30 @@ const Header = () => {
                                         <nav id="mobile-menu">
                                             <ul>
                                                 <li class="has-dropdown menu-thumb">
-                                                    <a href="#">
+                                                    <a href="#" class="text-decoration-none">
                                                         Home
                                                         <i class="fas fa-chevron-down"></i>
                                                     </a>
                                                 </li>
-                                                <li class="has-dropdown active d-xl-none">
-                                                    <a href="#" class="border-none">
-                                                        Home
+                                                <li class="has-dropdown menu-thumb">
+                                                    <a href="#" class="text-decoration-none" onClick={() => scrollToSection()}>
+                                                        About Us
+                                                        <i class="fas fa-chevron-down"></i>
                                                     </a>
                                                 </li>
+                                                <li class="has-dropdown menu-thumb">
+                                                    <a href="#" class="text-decoration-none" onClick={() => scrollToContact()}>
+                                                        Contact Us
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="has-dropdown menu-thumb">
+                                                    <a href="#" class="text-decoration-none" onClick={() => scrollToBlog()}>
+                                                        Blogs
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </a>
+                                                </li>
+
                                             </ul>
                                         </nav>
                                     </div>
@@ -46,9 +75,7 @@ const Header = () => {
                                 <div class="header-search">
                                     <button class="d-flex align-items-center search-toggle"><i class="far fa-search"></i></button>
                                 </div>
-                                <a href="" class="theme-btn">
-                                    <span>Explore More</span> <i class="far fa-long-arrow-right"></i>
-                                </a>
+
                                 <div class="header__hamburger d-xl-none my-auto">
                                     <div class="sidebar__toggle">
                                         <div class="header-bar">

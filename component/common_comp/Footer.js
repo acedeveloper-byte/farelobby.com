@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Footer = () => {
+const Footer = ({ contactRef }) => {
     return (
         <>
             <footer class="footer-section fix section-bg bg-cover" style={{ backgroundImage: `url('/img/footer/bg-image.jpg')` }}>
-                <div class="container">
+                <div class="container" ref={contactRef}>
                     <div class="footer-newsletter-items">
                         <h2>Get Updated the Our Latest Newsletter</h2>
                         <div class="footer-input">
@@ -40,7 +40,7 @@ const Footer = () => {
                                                 </div>
                                                 <div class="content">
                                                     <span>Mail Us</span>
-                                                    <h6><a href="https://modinatheme.com/cdn-cgi/l/email-protection#a7cec9c1c8e7c2dfc6cad7cbc289c4c8ca"><span class="__cf_email__" data-cfemail="0e676068614e6b766f637e626b206d6163">[email&#160;protected]</span></a></h6>
+                                                    <h6><a href="#"><span class="__cf_email__" data-cfemail="">info@farelobby.com</span></a></h6>
                                                 </div>
                                             </div>
                                         </div>
