@@ -388,7 +388,7 @@ export default function Home() {
                     "The staff was very professional, courteous, and genuinely committed to providing a great customized vacation. We couldn't have expected more."
                   </h3>
                   <div class="client-info">
-                    <h4>Michel John</h4>
+                    <h4>Milley Jose</h4>
                     <span>from New York, USA</span>
                   </div>
                 </div>
