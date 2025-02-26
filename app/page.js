@@ -5,15 +5,14 @@ import Footer from "@/component/common_comp/Footer";
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { useRef } from 'react';
 
 
 export default function Home() {
 
-  const sectionRef = useRef(null)
-  const blogRef = useRef(null)
-  const contactRef = useRef(null)
+  const sectionRef = useRef()
+  const blogRef = useRef()
+  const contactRef = useRef()
 
   return (
     < >
