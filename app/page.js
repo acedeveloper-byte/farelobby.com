@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Accordion, Container, Row, Col } from "react-bootstrap";
 import { useRef } from 'react';
 import ScrollToTop from "@/component/common_comp/ScrollToTop";
+import FloatingCallButton from "@/component/Call";
 
 
 export default function Home() {
@@ -30,25 +31,11 @@ export default function Home() {
                   <img src="/img/hero/new/plane-3.png" alt="img" />
                 </div>
                 <div class="hero-bg bg-cover" style={{ backgroundImage: `url('/img/hero/05.jpg')` }}></div>
-                <div class="container">
-                  <div class="row g-4">
-                    <div class="col-lg-12">
-                      <div class="hero-content">
-                        <h6 data-animation="fadeInUp" data-delay="1.3s">Tour & Travel Agency</h6>
-                        <h1 data-animation="fadeInUp" data-delay="1.5s">
-                          <span class="shape-text">Explore</span><span>The</span> <br /> Global Worlds
-
-                        </h1>
-                        <p data-animation="fadeInUp" data-delay="1.7s">
-                          Take the scenic route, where the destination is just as beautiful as the journey.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
+
         <div class="container">
           <div class="booking-list-area-1">
             <div class="booking-list">
@@ -535,6 +522,7 @@ export default function Home() {
         </div>
       </section>
       <ScrollToTop />
+      <FloatingCallButton />
       <Footer contactRef={contactRef} />
     </>
   );

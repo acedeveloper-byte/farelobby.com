@@ -1278,7 +1278,7 @@ p {
 }
 @media (max-width: 1600px) {
   .header-1 .header-right .contact-items {
-    display: none;
+    display: block;
   }
 }
 .header-1 .header-right .contact-items .icon {
@@ -1417,6 +1417,7 @@ p {
   .header-1.header-4 .header-main {
     padding: 10px 0;
   }
+  
 }
 .header-1.header-4 .theme-btn {
   border-radius: 0;
@@ -1683,16 +1684,27 @@ p {
   .breadcrumb-wrapper .container-fluid {
     padding: 0 50px;
   }
+  .alert-button {
+    display: none;
+    animation: 1500ms ease 0s infinite normal none running glowing;
+}
 }
 @media (max-width: 1399px) {
   .breadcrumb-wrapper .container-fluid {
     padding: 0 40px;
   }
+  .alert-button {
+    animation: 1500ms ease 0s infinite normal none running glowing;
+}
 }
 @media (max-width: 1199px) {
   .breadcrumb-wrapper .container-fluid {
     padding: 0 30px;
   }
+  .alert-button {
+    display: none !important;
+    animation: 1500ms ease 0s infinite normal none running glowing;
+}
 }
 .breadcrumb-wrapper .page-heading {
   position: relative;
@@ -1702,6 +1714,23 @@ p {
   .breadcrumb-wrapper .page-heading {
     text-align: center;
   }
+  .alert-button {
+    display: none !important;
+    background-color: rgb(0, 74, 127) !important;
+    color: rgb(255, 255, 255) !important;
+    cursor: pointer !important;
+    font-family: Arial !important;
+    font-size: 20px !important;
+    text-align: center !important;
+    border-radius: 10px !important;
+    border-width: initial !important;
+    border-style: none !important;
+    border-color: initial !important;
+    border-image: initial !important;
+    padding: 5px 10px !important;
+    text-decoration: none !important;
+    animation: 1500ms ease 0s infinite normal none running glowing !important;
+}
 }
 .breadcrumb-wrapper .page-heading .breadcrumb-items {
   display: flex;
@@ -10362,7 +10391,7 @@ p.sticky-label {
 }
 
 .go-top.active {
-  top: 98%;
+  top: 90%;
   -webkit-transform: translateY(-98%);
   transform: translateY(-98%);
   opacity: 1;
@@ -10426,4 +10455,33 @@ p.sticky-label {
   opacity: 1;
   visibility: visible;
   top: 50%
+}
+.floating-call-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #28a745;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-size: 24px;
+  z-index: 1000;
+  transition: background 0.3s ease-in-out;
+}
+
+.floating-call-btn:hover {
+  background-color: #218838;
+}
+
+/* Show only on smaller devices */
+@media (min-width: 768px) {
+  .floating-call-btn {
+    display: none;
+  }
 }
