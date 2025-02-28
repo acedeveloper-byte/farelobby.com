@@ -1,4 +1,5 @@
 'use client'
+import { FaAnglesRight } from "react-icons/fa6";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import CountUp from 'react-countup';
 import Header from "@/component/common_comp/Header";
@@ -8,6 +9,7 @@ import { Accordion, Container, Row, Col } from "react-bootstrap";
 import { useRef } from 'react';
 import ScrollToTop from "@/component/common_comp/ScrollToTop";
 import FloatingCallButton from "@/component/Call";
+import Engine from "@/component/common_comp/Engine";
 
 
 export default function Home() {
@@ -24,93 +26,29 @@ export default function Home() {
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="hero-items">
-                <div class="plane-shape">
-                  <img src="/img/hero/new/plane-2.png" alt="img" />
-                </div>
-                <div class="plane-shape-2">
-                  <img src="/img/hero/new/plane-3.png" alt="img" />
-                </div>
-                <div class="hero-bg bg-cover" style={{ backgroundImage: `url('/img/hero/05.jpg')` }}></div>
+
+
+                <div class="hero-bg bg-cover" style={{ backgroundImage: `url('/img/background.jpg')` }}></div>
+
               </div>
             </div>
           </div>
         </div>
 
-        <div class="container">
-          <div class="booking-list-area-1">
-            <div class="booking-list">
-              <div class="icon">
-                <img src="/img/hero/location.png" alt="img" />
-              </div>
-              <div class="content">
-                <h5>Destination</h5>
-                <div class="form-clt">
-                  <div class="form">
-                    <select class="nice-select single-select w-100 ">
-                      <option>Your city or Region</option>
-                      <option>Australia</option>
-                      <option>India</option>
-                      <option>Italy</option>
-                      <option>Japan</option>
-                    </select>
-                  </div>
+        <div class="container search-engine">
+          <div class="container">
+            <div class="row g-4">
+              <div class="col-lg-12">
+                <div class="hero-content">
+                  <h1 data-animation="fadeInUp" data-delay="1.5s" className="text-white">
+                    <span class="shape-text text-white">Explore</span><span className="text-white">The</span> <br /> Global Worlds
+                  </h1>
+                  <p data-animation="fadeInUp" data-delay="1.7s" className="text-white">Take the scenic route, where the destination is just as beautiful as the journey.</p>
                 </div>
               </div>
             </div>
-            <div class="booking-list">
-              <div class="icon">
-                <img src="/img/hero/location.png" alt="img" />
-              </div>
-              <div class="content">
-                <h5>All Activity</h5>
-                <div class="form-clt">
-                  <div class="form">
-                    <select class="nice-select single-select w-100 ">7
-                      <option>Choose Activity</option>
-                      <option> Activity 01</option>
-                      <option> Activity 02</option>
-                      <option> Activity 03</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="booking-list">
-              <div class="icon">
-                <img src="/img/hero/location.png" alt="img" />
-              </div>
-              <div class="content">
-                <h5>Departure Date</h5>
-                <div class="form-clt">
-                  <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
-                    <input class="form-control" type="text" placeholder="Date Form" readonly="" />
-                    <span class="input-group-addon"><i class="far fa-calendar"></i></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="booking-list">
-              <div class="icon">
-                <img src="/img/hero/location.png" alt="img" />
-              </div>
-              <div class="content">
-                <h5>Guest</h5>
-                <div class="form-clt">
-                  <div class="form">
-                    <select class="nice-select single-select w-100">
-                      <option> Your Guest</option>
-                      <option>  Guest 01</option>
-                      <option> Guest 02</option>
-                      <option> Guest 03</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button type="submit" class="theme-btn">
-              <span>Search <i class="far fa-search"></i></span>
-            </button>
           </div>
+          <Engine />
         </div>
       </section>
 
@@ -200,117 +138,78 @@ export default function Home() {
         </div>
       </section>
 
-      <section class="trending-destinations section-padding fix">
+      <section class="flight-deals section-padding fix">
         <div class="container">
-          <div class="section-title-area lg-center">
+          <div class="section-title-area">
             <div class="section-title">
-              <span class="wow fadeInUp">Trending Destinations</span>
-              <h2 class="wow fadeInUp" data-wow-delay=".3s">Trendy Travel Locations</h2>
+              <span>Best</span>
+              <h2>Flight Deals</h2>
             </div>
-            <a href="#" class="theme-btn theme-btn-2 wow fadeInUp" data-wow-delay=".5s">
-              <span>Explore More</span> <i class="far fa-long-arrow-right"></i>
-            </a>
           </div>
           <div class="row">
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-              <div class="trending-destinations-card-items">
-                <div class="destinations-img">
-                  <img src="/img/destinations/01.jpg" alt="img" />
-                  <div class="icon">
-                    <a href="#">
-                      <i class="fas fa-arrow-right"></i>
-                    </a>
-                  </div>
-                  <ul class="destinations-content">
-                    <li class="title">
-                      <a href="#">Istanbul, Turkey</a>
-                    </li>
-                  </ul>
+            <div class="col-lg-4 col-md-6">
+              <div class="flight-card">
+                <img src="/img/LAX.jpg" alt="Las Vegas" className="img-fluid w-100 best-flight-deals-image" />
+                <div class="flight-info">
+                  <p><strong>LAX → LAS</strong></p>
+                  <p>May 17 - May 24</p>
+                  <> <a href="tel:+1(855) 497-3456" className="btn btn-primary">Book Now</a></>
+
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-              <div class="trending-destinations-card-items">
-                <div class="destinations-img">
-                  <img src="/img/destinations/02.jpg" alt="img" />
-                  <div class="icon">
-                    <a href="#">
-                      <i class="fas fa-arrow-right"></i>
-                    </a>
-                  </div>
-                  <ul class="destinations-content">
-                    <li class="title">
-                      <a href="#">Kyoto, Japan</a>
-                    </li>
-                  </ul>
+            <div class="col-lg-4 col-md-6">
+              <div class="flight-card">
+                <img src="/img/MCO.webp" alt="Orlando" className="img-fluid w-100 best-flight-deals-image" />
+                <div class="flight-info">
+                  <p><strong>MCO → ORD</strong></p>
+                  <p>May 20 - May 28</p>
+                  <> <a href="tel:+1(855) 497-3456" className="btn btn-primary">Book Now</a></>
+
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-              <div class="trending-destinations-card-items">
-                <div class="destinations-img">
-                  <img src="/img/destinations/03.jpg" alt="img" />
-                  <div class="icon">
-                    <a href="#">
-                      <i class="fas fa-arrow-right"></i>
-                    </a>
-                  </div>
-                  <ul class="destinations-content">
-                    <li class="title">
-                      <a href="#">Cusco, Peru</a>
-                    </li>
-                  </ul>
+            <div class="col-lg-4 col-md-6">
+              <div class="flight-card">
+                <img src="/img/NYC.jpg" alt="New York" className="img-fluid w-100 best-flight-deals-image" />
+                <div class="flight-info">
+                  <p><strong>NYC → MCO</strong></p>
+                  <p>May 17 - May 24</p>
+                  <> <a href="tel:+1(855) 497-3456" className="btn btn-primary">Book Now</a></>
+
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-              <div class="trending-destinations-card-items">
-                <div class="destinations-img">
-                  <img src="/img/destinations/04.jpg" alt="img" />
-                  <div class="icon">
-                    <a href="#">
-                      <i class="fas fa-arrow-right"></i>
-                    </a>
-                  </div>
-                  <ul class="destinations-content">
-                    <li class="title">
-                      <a href="#">Vienna, Australia</a>
-                    </li>
-                  </ul>
+            <div class="col-lg-4 col-md-6">
+              <div class="flight-card">
+                <img src="/img/MSY.jpg" alt="Houston" className="img-fluid w-100 best-flight-deals-image" />
+                <div class="flight-info">
+
+                  <p><strong>MSY → IAH</strong></p>
+                  <p>May 10 - May 24</p>
+                  <> <a href="tel:+1(855) 497-3456" className="btn btn-primary">Book Now</a></>
+
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-              <div class="trending-destinations-card-items">
-                <div class="destinations-img">
-                  <img src="/img/destinations/05.jpg" alt="img" />
-                  <div class="icon">
-                    <a href="#">
-                      <i class="fas fa-arrow-right"></i>
-                    </a>
-                  </div>
-                  <ul class="destinations-content">
-                    <li class="title">
-                      <a href="#">Lisbon, Portugal</a>
-                    </li>
-                  </ul>
+            <div class="col-lg-4 col-md-6">
+              <div class="flight-card">
+                <img src="/img/NYC.jpg" alt="San Juan" className="img-fluid w-100 best-flight-deals-image" />
+                <div class="flight-info">
+                  <p><strong>NYC → SJU</strong></p>
+                  <p>May 13 - May 26</p>
+                  <> <a href="tel:+1(855) 497-3456" className="btn btn-primary">Book Now</a></>
+
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-              <div class="trending-destinations-card-items">
-                <div class="destinations-img">
-                  <img src="/img/destinations/06.jpg" alt="img" />
-                  <div class="icon">
-                    <a href="#">
-                      <i class="fas fa-arrow-right"></i>
-                    </a>
-                  </div>
-                  <ul class="destinations-content">
-                    <li class="title">
-                      <a href="#">Zagreb, Croatia</a>
-                    </li>
-                  </ul>
+            <div class="col-lg-4 col-md-6">
+              <div class="flight-card">
+                <img src="/img/NYC.jpg" alt="London" className="img-fluid w-100 best-flight-deals-image" />
+                <div class="flight-info">
+                  <p><strong>NYC → LON</strong></p>
+                  <p>May 10 - May 24</p>
+                  <> <a href="tel:+1(855) 497-3456" className="btn btn-primary">Book Now</a></>
                 </div>
               </div>
             </div>
@@ -406,7 +305,6 @@ export default function Home() {
                 <div className="faq-accordion">
                   <Accordion defaultActiveKey="0" id="accordion2">
 
-                    {/* FAQ Item 1 */}
                     <Accordion.Item eventKey="0" className="accordion-item wow fadeInUp" data-wow-delay=".2s">
                       <Accordion.Header>What are the different fare types offered by American Airlines?</Accordion.Header>
                       <Accordion.Body className="accordion-body">
@@ -414,15 +312,12 @@ export default function Home() {
                       </Accordion.Body>
                     </Accordion.Item>
 
-                    {/* FAQ Item 2 */}
                     <Accordion.Item eventKey="1" className="accordion-item wow fadeInUp" data-wow-delay=".4s">
                       <Accordion.Header>Why does Spirit Airlines Charge Such Low Fares?</Accordion.Header>
                       <Accordion.Body className="accordion-body">
                         The Ultra-low-cost fares from Spirit Airlines are at the extremely low end. But Spirit charges for every other facility such as seat selection, carry-on bags, drinks, and more. The very low fare leaves it to the passengers to pay for whatever services they want to incur. This keeps their ticket prices a little low.
                       </Accordion.Body>
                     </Accordion.Item>
-
-                    {/* FAQ Item 3 */}
                     <Accordion.Item eventKey="2" className="accordion-item wow fadeInUp" data-wow-delay=".6s">
                       <Accordion.Header>Are United Airlines Flight Tickets refundable? </Accordion.Header>
                       <Accordion.Body className="accordion-body">
@@ -430,7 +325,6 @@ export default function Home() {
                       </Accordion.Body>
                     </Accordion.Item>
 
-                    {/* FAQ Item 4 */}
                     <Accordion.Item eventKey="3" className="accordion-item wow fadeInUp" data-wow-delay=".7s">
                       <Accordion.Header>Is there any fare charge for checked bags?
                       </Accordion.Header>
@@ -527,3 +421,6 @@ export default function Home() {
     </>
   );
 }
+
+
+
