@@ -32,7 +32,7 @@ const Header = ({ sectionRef, contactRef, blogRef }) => {
                             <div class="header-right d-flex justify-content-end align-items-center">
                                 <div class="mean__menu-wrapper">
                                     <div class="main-menu">
-                                        <nav class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                        <nav id="mobile-menu">
                                             <ul>
                                                 <li class="has-dropdown menu-thumb">
                                                     <a href="#" class="text-decoration-none">
@@ -69,10 +69,10 @@ const Header = ({ sectionRef, contactRef, blogRef }) => {
                                         <a class="alert-button" href="tel:+1(855) 497-3456">Call @ (855) 497-3456</a>
                                     </div>
                                 </div>
-                                <div class="header__hamburger d-xl-none my-auto">
 
+                                <div class="header__hamburger d-xl-none my-auto">
                                     <div class="sidebar__toggle">
-                                        <div class="header-bar" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                        <div class="header-bar">
                                             <span></span>
                                             <span></span>
                                             <span></span>
@@ -84,7 +84,7 @@ const Header = ({ sectionRef, contactRef, blogRef }) => {
                     </div>
                 </div>
             </div>
-        </header >
+        </header>
     )
 }
 
