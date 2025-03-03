@@ -1,3 +1,4 @@
+'use client'
 import Breadcrumbs from '@/component/common_comp/Breadcrumbs'
 import Footer from '@/component/common_comp/Footer'
 import Header from '@/component/common_comp/Header'
