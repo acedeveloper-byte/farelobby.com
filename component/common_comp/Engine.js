@@ -51,7 +51,6 @@ const Engine = () => {
             setFilteredAirports([]);
             return;
         }
-
         const filtered = airportData.filter(
             (airport) =>
                 airport.airportName.toLowerCase().includes(input.toLowerCase()) ||
@@ -138,7 +137,7 @@ const Engine = () => {
                     </Row>
                     <Tab.Pane eventKey="flights">
                         <Row className="g-3">
-                            <Col md={2}>
+                            <Col md={3}>
                                 <div className="input-group">
                                     <span class="input-group-text">
                                         <GiAirplaneDeparture />
@@ -168,7 +167,7 @@ const Engine = () => {
                                     </ListGroup>
                                 )}
                             </Col>
-                            <Col md={2}>
+                            <Col md={3}>
                                 <div className="input-group">
                                     <span className="input-group-text">
                                         <GiAirplaneArrival />
@@ -256,8 +255,8 @@ const Engine = () => {
                                     </select>
                                 </div>
                             </Col>
-                            <Col md={2}>
-                                <button className="btn btn-primary">SEARCH</button>
+                            <Col md={12}>
+                                <button className="btn btn-primary w-100">SEARCH</button>
                             </Col>
                             <Col md={2}>
                                 {/* <div className="input-group">
