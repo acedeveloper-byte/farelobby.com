@@ -64,7 +64,6 @@ const Header = ({ sectionRef, contactRef, blogRef }) => {
                                     </div>
                                 </div>
                                 <div class="contact-items">
-
                                     <div class="content">
                                         <a class="alert-button" href="tel:+1(855) 497-3456">Call @ (855) 497-3456</a>
                                     </div>
