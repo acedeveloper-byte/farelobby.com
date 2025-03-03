@@ -14,10 +14,10 @@ const page = () => {
             <Breadcrumbs main={"home"} link={"/"} title={"Contact us"} page={"contact-us"} />
             <section class="contact-section section-padding fix">
                 <div class="shape-1">
-                    <img src="assets/img/01.png" alt="img" />
+                    <img src="/img/01.png" alt="img" />
                 </div>
                 <div class="shape-2">
-                    <img src="assets/img/02.png" alt="img" />
+                    <img src="/img/02.png" alt="img" />
                 </div>
                 <div class="container">
                     <div class="contact-wrapper">

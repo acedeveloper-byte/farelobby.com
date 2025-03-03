@@ -2,7 +2,7 @@ import React from 'react'
 
 const Breadcrumbs = ({ link, main, page, title }) => {
     return (
-        <div class="breadcrumb-wrapper section-padding  bg-cover" style="background-image: url('assets/img/breadcrumb-bg.jpg');">
+        <div class="breadcrumb-wrapper section-padding  bg-cover" style={{ backgroundImage: "url('assets/img/breadcrumb-bg.jpg')" }}>
             <div class="container-fluid">
                 <div class="page-heading">
                     <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".3s">
