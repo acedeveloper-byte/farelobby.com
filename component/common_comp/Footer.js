@@ -24,26 +24,6 @@ const Footer = ({ contactRef }) => {
                                         </a>
                                     </div>
                                     <div class="footer-content">
-                                        <div class="contact-info-items">
-                                            <div class="contact-items">
-                                                <div class="icon">
-                                                    <img src="/img/call.png" alt="img" />
-                                                </div>
-                                                <div class="content">
-                                                    <span>Call Us</span>
-                                                    <h6><a href="tel:++18554973456">+1(855) 497-3456</a></h6>
-                                                </div>
-                                            </div>
-                                            <div class="contact-items">
-                                                <div class="icon">
-                                                    <img src="/img/mail.png" alt="img" />
-                                                </div>
-                                                <div class="content">
-                                                    <span>Mail Us</span>
-                                                    <h6><a href="#"><span class="__cf_email__" data-cfemail="">info@farelobby.com</span></a></h6>
-                                                </div>
-                                            </div>
-                                        </div>
 
                                         <div class="social-icon">
                                             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -61,44 +41,36 @@ const Footer = ({ contactRef }) => {
                                     </div>
                                     <ul class="list-items">
                                         <li>
-                                            <a href="#">All Destination</a>
+                                            <a href="tel:+1(855) 497-3456">24/7 Support</a>
                                         </li>
-                                        <li>
-                                            <a href="#">24/7 Support</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Our Team</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Tour Places</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Reviews</a>
-                                        </li>
+
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
                                 <div class="footer-widget-items">
                                     <div class="widget-title">
-                                        <h3>About Travil</h3>
+                                        <h3>About Farelobby</h3>
                                     </div>
                                     <ul class="list-items">
                                         <li>
                                             <a href="">About Us</a>
                                         </li>
+
                                         <li>
-                                            <a href="#">Legal Notice</a>
+                                            <a href="/contact-us">Contact Us</a>
                                         </li>
-                                        <li>
-                                            <a href="#">Terms & Condition</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Contact Us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Apple Store</a>
-                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                                <div class="footer-widget-items">
+                                    <div class="widget-title">
+                                        <h3>We Accept Payment Online</h3>
+                                    </div>
+                                    <ul class="list-items">
+                                        <img src="/img/footer/payment_types.png" class="img-fluid w-100" />
                                     </ul>
                                 </div>
                             </div>

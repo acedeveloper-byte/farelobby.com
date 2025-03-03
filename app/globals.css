@@ -2186,7 +2186,7 @@ p {
 @media (max-width: 1600px) {
   
   .img-logo {
-    width: 70%;
+    width: 50%;
     height: auto;
   }
   .hero-1 .hero-image {
@@ -2198,7 +2198,7 @@ p {
 @media (max-width: 1399px) {
   
   .img-logo {
-    width: 70%;
+    width: 50%;
     height: auto;
   }
   .hero-1 .hero-image {
@@ -10508,7 +10508,7 @@ p.sticky-label {
 /* Mobile Styles */
 @media (max-width: 768px) {
   .hero-4 .hero-items {
-    padding: 45% 0% 111%;
+    padding: 70% 0% 111%;
     position: relative;
   }
   .search-engine{
@@ -10563,7 +10563,70 @@ p.sticky-label {
 }
 
 .best-flight-deals-image {
-  width: 100%;
+   width: 100%;
     border-radius: 10px;
     object-fit: contain;
 }
+
+.animation-container {
+  position: relative;
+  width: 38%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+
+.dotted-line {
+  width: 70%;
+  height: 2px;
+  background: repeating-linear-gradient(
+    to right,
+    gray 0%,
+    gray 10%,
+    transparent 10%,
+    transparent 20%
+  );
+  background-size: 20px 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: moveLine 1.5s linear infinite;
+}
+
+@keyframes moveLine {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 20px 0;
+  }
+}
+
+.plane {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.best-flight-routes-details {
+  margin: 10px 0px 10px 0px;
+  justify-content: space-around;
+
+}
+.best-flight-routes-details .aiportname {
+    font-size : 12px;
+    font-weight: bold;
+}
+.deals-book-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+width : 100%;
+background-color:  aliceblue;
+border-radius :  10px
+} 
+
+

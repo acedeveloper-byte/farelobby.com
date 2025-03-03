@@ -10,7 +10,7 @@ import CustomDropDown from '../EngineAtoms/CustomDropdown';
 
 const Engine = () => {
     const inputRef = useRef(null);
-
+    const [tripType, setTripType] = useState("round-way"); // Default: One-way
     const [depDate, setDeptDate] = useState(false)
     const [ARRDate, setARRtDate] = useState(false)
     const [activeTab, setActiveTab] = useState("flights");
@@ -68,6 +68,22 @@ const Engine = () => {
                 {/* Tab Content */}
                 <Tab.Content className="p-4 border rounded shadow bg-white">
                     {/* Flights Tab */}
+
+                    <Row className="my-3">
+                        <Col md={2} sm={4}>
+                            <span>
+                                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" onClick={() => setTripType("round-way")} />
+                                <label class={tripType === "round-way" ? "btn btn-secondary" : "btn btn-light"} for="option2" >Round way</label>
+                            </span>
+                        </Col>
+                        <Col md={2} sm={4}>
+                            <span>
+                                <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off" onClick={() => setTripType("one-way")} />
+                                {/* <label class={`tripType === "one-way" ? "btn btn-secondary" : "btn btn-light"`} for="option4" >One way</label> */}
+                                <label class={`engine-radio-check-one-way ${tripType === "one-way" ? "btn btn-secondary" : "btn btn-light"}`} for="option4" >One way</label>
+                            </span>
+                        </Col>
+                    </Row>
                     <Tab.Pane eventKey="flights">
                         <Row className="g-3">
                             <Col md={2}>
@@ -125,6 +141,7 @@ const Engine = () => {
                                         className="form-control"
                                         placeholder={`Input`}
                                         value={selectionRange.endDate.toLocaleDateString()}
+                                        disabled={tripType === "one-way"}
                                     />
                                     {ARRDate &&
                                         <CalendarRange selectionRange={selectionRange} setSelectionRange={setSelectionRange}

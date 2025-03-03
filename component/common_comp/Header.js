@@ -37,7 +37,6 @@ const Header = ({ sectionRef, contactRef, blogRef }) => {
                                                 <li class="has-dropdown menu-thumb">
                                                     <a href="#" class="text-decoration-none">
                                                         Home
-                                                        <i class="fas fa-chevron-down"></i>
                                                     </a>
                                                 </li>
                                                 <li class="has-dropdown menu-thumb">
@@ -47,18 +46,10 @@ const Header = ({ sectionRef, contactRef, blogRef }) => {
                                                     </a>
                                                 </li>
                                                 <li class="has-dropdown menu-thumb">
-                                                    <a href="#" class="text-decoration-none" onClick={() => scrollToContact()}>
+                                                    <a href="/contact-us" class="text-decoration-none" >
                                                         Contact Us
-                                                        <i class="fas fa-chevron-down"></i>
                                                     </a>
                                                 </li>
-                                                <li class="has-dropdown menu-thumb">
-                                                    <a href="#" class="text-decoration-none" onClick={() => scrollToBlog()}>
-                                                        Blogs
-                                                        <i class="fas fa-chevron-down"></i>
-                                                    </a>
-                                                </li>
-
                                             </ul>
                                         </nav>
                                     </div>
