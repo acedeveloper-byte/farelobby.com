@@ -6,8 +6,7 @@ import { GiAirplaneDeparture, GiCalendar, GiAirplaneArrival } from "react-icons/
 import React, { useEffect, useRef, useState } from "react";
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import CalendarRange from "../CalendarRange";
-import CustomDropDown from '../EngineAtoms/CustomDropdown';
-
+import airportData from "../../utils/airportdata.json"
 const Engine = () => {
     const inputRef = useRef(null);
     const [tripType, setTripType] = useState("round-way"); // Default: One-way
@@ -25,6 +24,59 @@ const Engine = () => {
         endDate: new Date(),
         key: "selection",
     });
+
+
+    const [cabinClass, setCabinClass] = useState("economy");
+    const [locations, setLocations] = useState({ from: "", to: "" });
+    const [dates, setDates] = useState({ departure: "", return: "" });
+    const [filteredAirports, setFilteredAirports] = useState([]);
+    const [activeField, setActiveField] = useState("");
+
+    const handleSwapLocations = () => {
+        setLocations({ from: locations.to, to: locations.from });
+    };
+
+    const handleSearch = (e) => {
+        e.preventDefault();
+        console.log("Search details:", {
+            tripType,
+            cabinClass,
+            locations,
+            dates,
+        });
+    };
+
+    const filterAirports = (input) => {
+        if (input.trim() === "") {
+            setFilteredAirports([]);
+            return;
+        }
+
+        const filtered = airportData.filter(
+            (airport) =>
+                airport.airportName.toLowerCase().includes(input.toLowerCase()) ||
+                airport.airportCode.toLowerCase().includes(input.toLowerCase()) ||
+                airport.cityName.toLowerCase().includes(input.toLowerCase())
+        );
+        setFilteredAirports(filtered);
+    };
+
+    const handleInputChange = (field, value) => {
+        setLocations({ ...locations, [field]: value });
+        setActiveField(field);
+        filterAirports(value);
+    };
+
+    const handleAirportSelect = (field, airport) => {
+        setLocations({
+            ...locations,
+            [field]: `${airport.cityName} (${airport.airportCode})`,
+        });
+        setFilteredAirports([]);
+        setActiveField("");
+    };
+
+
 
     const handleCalendarSelectionDep = () => {
         setDeptDate(true)
@@ -94,8 +146,27 @@ const Engine = () => {
                                     <input
                                         className="form-control"
                                         placeholder={`Flying From`}
+                                        value={locations.from}
+
+                                        onChange={(e) => handleInputChange("from", e.target.value)}
+
                                     />
+
                                 </div>
+                                {activeField === "from" && filteredAirports.length > 0 && (
+                                    <ListGroup className="autocomplete-dropdown overlay-dropdown">
+                                        {filteredAirports.map((airport, index) => (
+                                            <ListGroup.Item
+                                                key={index}
+                                                action
+                                                onClick={() => handleAirportSelect("from", airport)}
+                                            >
+                                                {airport.cityName} ({airport.airportCode}) -{" "}
+                                                {airport.airportName}
+                                            </ListGroup.Item>
+                                        ))}
+                                    </ListGroup>
+                                )}
                             </Col>
                             <Col md={2}>
                                 <div className="input-group">
@@ -105,8 +176,25 @@ const Engine = () => {
                                     <input
                                         className="form-control"
                                         placeholder={`Flying To`}
+                                        value={locations.to}
+                                        onChange={(e) => handleInputChange("to", e.target.value)}
+
                                     />
                                 </div>
+                                {activeField === "to" && filteredAirports.length > 0 && (
+                                    <ListGroup className="autocomplete-dropdown overlay-dropdown">
+                                        {filteredAirports.map((airport, index) => (
+                                            <ListGroup.Item
+                                                key={index}
+                                                action
+                                                onClick={() => handleAirportSelect("to", airport)}
+                                            >
+                                                {airport.cityName} ({airport.airportCode}) -{" "}
+                                                {airport.airportName}
+                                            </ListGroup.Item>
+                                        ))}
+                                    </ListGroup>
+                                )}
                             </Col>
                             <Col md={2} className="position-relative">
                                 <div className="input-group">
