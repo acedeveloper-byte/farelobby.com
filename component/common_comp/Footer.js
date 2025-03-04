@@ -75,6 +75,12 @@ const Footer = ({ contactRef }) => {
                                             <a href="/legal-links/cookies-policy">Cookies Policy </a>
                                         </li>
                                         <li>
+                                            <a href="/legal-links/taxes-and-fees">Taxes and Fees </a>
+                                        </li>
+                                        <li>
+                                            <a href="/legal-links/post-ticketing-service-fees">Post Ticketing service Fees</a>
+                                        </li>
+                                        <li>
                                             <a href="/legal-links/price-match-promise">Price Match Promise</a>
                                         </li>
                                         <li>
