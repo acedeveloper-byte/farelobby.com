@@ -24,7 +24,7 @@ const Header = ({ sectionRef, contactRef, blogRef }) => {
                         <div class="header-main">
                             <div class="header-left">
                                 <div class="logo">
-                                    <a href="#" class="header-logo">
+                                    <a href="/" class="header-logo">
                                         <img src="/img/logo/colour-logo.png" alt="logo-img" class="img-logo" />
                                     </a>
                                 </div>

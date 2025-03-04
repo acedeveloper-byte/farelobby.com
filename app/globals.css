@@ -10637,3 +10637,25 @@ border-radius :  10px
   position: absolute;
   z-index: 99999;
 }
+
+
+.custom-list {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 30px; /* Space for the icon */
+  margin-bottom: 10px;
+}
+
+.custom-list li::before {
+  font-family: "bootstrap-icons";
+  position: absolute;
+  left: 0;
+  font-size: 18px;
+  color: #007bff; /* Bootstrap primary blue */
+  content: "\f269";
+}
+

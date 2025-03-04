@@ -74,8 +74,18 @@ const Footer = ({ contactRef }) => {
                                         <li>
                                             <a href="/legal-links/price-match-promise">Price Match Promise</a>
                                         </li>
-                                        <li></li>
-                                        <li></li>
+                                        <li>
+                                            <a href="/legal-links/fare-disclosure">Fare Disclousre</a>
+                                        </li>
+                                        <li>
+                                            <a href="/legal-links/fulfillment-policy">Fulfillment Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="/legal-links/advertiser-disclosure">Advertiser Disclousre</a>
+                                        </li>
+                                        <li>
+                                            <a href="/legal-links/cancellation-refund">Advertiser Disclousre</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
