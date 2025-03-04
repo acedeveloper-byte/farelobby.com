@@ -90,7 +90,7 @@ const page = () => {
                                             <div class="content">
                                                 <span>Send Email</span>
                                                 <h3>
-                                                    <a href="https://modinatheme.com/cdn-cgi/l/email-protection#137b767f7f7c6066637c6167676172657a7f53747e727a7f3d707c7e"><span class="__cf_email__ text-decoration-none" data-cfemail="18707d7474776b6d68776a6c6c6a796e7174587f75797174367b7775">[email&#160;protected]</span></a>
+                                                    <a href="#" class="text-decoration-none"><span class="__cf_email__ text-decoration-none" data-cfemail="18707d7474776b6d68776a6c6c6a796e7174587f75797174367b7775">info@farelobby.com</span></a>
                                                 </h3>
                                             </div>
                                         </div>
@@ -103,7 +103,7 @@ const page = () => {
                                     <p class="wow fadeInUp" data-wow-delay=".5s">
                                         We offer carefully curated destinations and tours that capture the true essence of location, ensuring you experience.
                                     </p>
-                                    <form action="https://modinatheme.com/html/travil/contact.php" id="contact-form1" method="POST" class="contact-form-items">
+                                    <form action="#" id="contact-form1" method="POST" class="contact-form-items">
                                         <div class="row g-4">
                                             <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                                                 <div class="form-clt">
