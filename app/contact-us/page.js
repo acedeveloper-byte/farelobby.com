@@ -69,7 +69,7 @@ const page = () => {
                                             <div class="content">
                                                 <span>Phone Number</span>
                                                 <h3>
-                                                    <a href="tel:+4940059654444">+494 005 965 4444</a>
+                                                    <a href="tel:+18554973456" class="text-decoration-none">(855) 497-3456</a>
                                                 </h3>
                                             </div>
                                         </div>
@@ -90,7 +90,7 @@ const page = () => {
                                             <div class="content">
                                                 <span>Send Email</span>
                                                 <h3>
-                                                    <a href="https://modinatheme.com/cdn-cgi/l/email-protection#137b767f7f7c6066637c6167676172657a7f53747e727a7f3d707c7e"><span class="__cf_email__" data-cfemail="18707d7474776b6d68776a6c6c6a796e7174587f75797174367b7775">[email&#160;protected]</span></a>
+                                                    <a href="https://modinatheme.com/cdn-cgi/l/email-protection#137b767f7f7c6066637c6167676172657a7f53747e727a7f3d707c7e"><span class="__cf_email__ text-decoration-none" data-cfemail="18707d7474776b6d68776a6c6c6a796e7174587f75797174367b7775">[email&#160;protected]</span></a>
                                                 </h3>
                                             </div>
                                         </div>
