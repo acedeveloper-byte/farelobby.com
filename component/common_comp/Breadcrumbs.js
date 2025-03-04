@@ -21,9 +21,7 @@ const Breadcrumbs = ({ link, main, page, title }) => {
                     <h1 class="wow fadeInUp" data-wow-delay=".5s">{title}</h1>
                 </div>
             </div>
-            <div class="plane-shape float-bob-x">
-                <img src="/img/breadcrumb-plane.png" alt="img" />
-            </div>
+          
         </div>
     )
 }
