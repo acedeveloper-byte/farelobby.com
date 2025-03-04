@@ -1,3 +1,4 @@
+
 import React from 'react'
 
 const Footer = ({ contactRef }) => {
@@ -67,10 +68,14 @@ const Footer = ({ contactRef }) => {
                             <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
                                 <div class="footer-widget-items">
                                     <div class="widget-title">
-                                        <h3>We Accept Payment Online</h3>
+                                        <h3>Legal Links</h3>
                                     </div>
                                     <ul class="list-items">
-                                        <img src="/img/footer/payment_types.png" class="img-fluid w-100" />
+                                        <li>
+                                            <a href="/legal-links/price-match-promise">Price Match Promise</a>
+                                        </li>
+                                        <li></li>
+                                        <li></li>
                                     </ul>
                                 </div>
                             </div>

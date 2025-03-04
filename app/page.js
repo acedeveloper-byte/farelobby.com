@@ -12,7 +12,6 @@ import ScrollToTop from "@/component/common_comp/ScrollToTop";
 import FloatingCallButton from "@/component/Call";
 import Engine from "@/component/common_comp/Engine";
 import BestDeals from "../utils/BestDeals.json"
-import SlickCarousel from "@/component/HomeComponets/Testimonials";
 import TestimonialSection from "@/component/HomeComponets/Testimonials";
 
 export default function Home() {

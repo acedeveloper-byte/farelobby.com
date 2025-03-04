@@ -1,11 +1,9 @@
 'use client'
+import React, { useRef } from 'react'
 import Breadcrumbs from '@/component/common_comp/Breadcrumbs'
 import Footer from '@/component/common_comp/Footer'
 import Header from '@/component/common_comp/Header'
-import React, { useRef } from 'react'
-import "../globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 const page = () => {
     const sectionRef = useRef()
@@ -14,7 +12,7 @@ const page = () => {
     return (
         <>
             <Header sectionRef={sectionRef} contactRef={contactRef} blogRef={blogRef} />
-            <Breadcrumbs main={"home"} link={"/"} title={"Contact us"} page={"contact-us"} />
+            <Breadcrumbs main={"home"} link={"/"} title={"Price Match Promise"} page={"price-match-promise"} />
             <section class="contact-section section-padding fix">
                 <div class="shape-1">
                     <img src="/img/01.png" alt="img" />
