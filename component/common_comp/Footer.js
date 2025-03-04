@@ -65,12 +65,15 @@ const Footer = ({ contactRef }) => {
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                            <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6">
                                 <div class="footer-widget-items">
                                     <div class="widget-title">
                                         <h3>Legal Links</h3>
                                     </div>
                                     <ul class="list-items">
+                                        <li>
+                                            <a href="/legal-links/cookies-policy">Cookies Policy </a>
+                                        </li>
                                         <li>
                                             <a href="/legal-links/price-match-promise">Price Match Promise</a>
                                         </li>
@@ -84,7 +87,7 @@ const Footer = ({ contactRef }) => {
                                             <a href="/legal-links/advertiser-disclosure">Advertiser Disclousre</a>
                                         </li>
                                         <li>
-                                            <a href="/legal-links/cancellation-refund">Advertiser Disclousre</a>
+                                            <a href="/legal-links/cancellation-refund">Cancellation refund</a>
                                         </li>
                                     </ul>
                                 </div>
