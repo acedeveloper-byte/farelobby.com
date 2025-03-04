@@ -53,8 +53,9 @@ const page = () => {
                                             <div class="content">
                                                 <span>Our Location</span>
                                                 <h3>
-                                                    Downtown Dubai, Dubai 00000, UAE
-                                                </h3>
+                                                    5050 Quorum Drive,
+                                                    Suite 700,
+                                                    Addison, TX 75254                                                </h3>
                                             </div>
                                         </div>
                                         <div class="contact-items wow fadeInUp" data-wow-delay=".5s">
