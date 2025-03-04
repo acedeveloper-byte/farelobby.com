@@ -17,7 +17,7 @@ const Footer = ({ contactRef }) => {
                     </div>
                     <div class="footer-wrapper">
                         <div class="row">
-                            <div class="col-xl-2 col-lg-7 col-md-12">
+                            <div class="col-xl-4 col-lg-7 col-md-12">
                                 <div class="footer-widget-items">
                                     <div class="widget-title">
                                         <a href="#" class="footer-logo">
