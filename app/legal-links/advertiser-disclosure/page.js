@@ -49,7 +49,6 @@ const page = () => {
                                 </h3>
                                 <p>Visit our website to get started.  </p>
                             </div>
-
                         </div>
                     </div>
                 </div>
