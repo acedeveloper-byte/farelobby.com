@@ -1,34 +1,39 @@
-
-'use client'
+"use client";
 import { GiCalendar } from "react-icons/gi";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import CountUp from 'react-countup';
+import CountUp from "react-countup";
 import Header from "@/component/common_comp/Header";
 import Footer from "@/component/common_comp/Footer";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Accordion, Container, Row, Col } from "react-bootstrap";
-import { useRef } from 'react';
+import { useRef } from "react";
 import ScrollToTop from "@/component/common_comp/ScrollToTop";
 import FloatingCallButton from "@/component/Call";
 import Engine from "@/component/common_comp/Engine";
-import BestDeals from "../utils/BestDeals.json"
+import BestDeals from "../utils/BestDeals.json";
 import TestimonialSection from "@/component/HomeComponets/Testimonials";
 
 export default function Home() {
-
-  const sectionRef = useRef()
-  const blogRef = useRef()
-  const contactRef = useRef()
+  const sectionRef = useRef();
+  const blogRef = useRef();
+  const contactRef = useRef();
 
   return (
-    < >
-      <Header sectionRef={sectionRef} contactRef={contactRef} blogRef={blogRef} />
+    <>
+      <Header
+        sectionRef={sectionRef}
+        contactRef={contactRef}
+        blogRef={blogRef}
+      />
       <section class="hero-section hero-4">
         <div class="swiper hero-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="hero-items">
-                <div class="hero-bg bg-cover" style={{ backgroundImage: `url('/img/background.jpg')` }}></div>
+                <div
+                  class="hero-bg bg-cover"
+                  style={{ backgroundImage: `url('/img/background.jpg')` }}
+                ></div>
               </div>
             </div>
           </div>
@@ -39,10 +44,22 @@ export default function Home() {
             <div class="row g-4">
               <div class="col-lg-12">
                 <div class="hero-content">
-                  <h1 data-animation="fadeInUp" data-delay="1.5s" className="text-white">
-                    <span class="shape-text text-white">Explore</span><span className="text-white">The</span> <br /> Global Worlds
+                  <h1
+                    data-animation="fadeInUp"
+                    data-delay="1.5s"
+                    className="text-white"
+                  >
+                    <span class="shape-text text-white">Explore</span>
+                    <span className="text-white">The</span> <br /> Global Worlds
                   </h1>
-                  <p data-animation="fadeInUp" data-delay="1.7s" className="text-white">Take the scenic route, where the destination is just as beautiful as the journey.</p>
+                  <p
+                    data-animation="fadeInUp"
+                    data-delay="1.7s"
+                    className="text-white"
+                  >
+                    Take the scenic route, where the destination is just as
+                    beautiful as the journey.
+                  </p>
                 </div>
               </div>
             </div>
@@ -64,7 +81,11 @@ export default function Home() {
               return (
                 <div class="col-lg-4 col-md-6">
                   <div class="flight-card">
-                    <img src={item.image} alt="Las Vegas" className="img-fluid w-100 best-flight-deals-image" />
+                    <img
+                      src={item.image}
+                      alt="Las Vegas"
+                      className="img-fluid w-100 best-flight-deals-image"
+                    />
                     <div class="flight-info">
                       <div class="d-flex col-md-5 w-100 best-flight-routes-details">
                         <p className="aiportname">{item.from}</p>
@@ -87,23 +108,25 @@ export default function Home() {
                         <p className="aiportname">{item.to}</p>
                       </div>
                       <div className="d-flex">
-                        <GiCalendar size={24} /><p>{item.date}</p>
+                        <GiCalendar size={24} />
+                        <p>{item.date}</p>
                       </div>
                       <div className="deals-book-now">
-                        <a href="tel:+1(855) 497-3456" className="text-decoration-none m-2">Book Now</a>
+                        <a
+                          href="tel:+1(855) 497-3456"
+                          className="text-decoration-none m-2"
+                        >
+                          Book Now
+                        </a>
                       </div>
-
                     </div>
                   </div>
                 </div>
-              )
+              );
             })}
-
-
           </div>
         </div>
       </section>
-
 
       <section class="about-section section-padding sect-bg">
         <div class="shape-1">
@@ -116,7 +139,12 @@ export default function Home() {
                 <div class="about-image wow img-custom-anim-left">
                   <img src="/img/about/03.jpg" alt="img" />
                   <div class="about-box float-bob-y">
-                    <h2><span class="odometer" data-count="29"><CountUp end={15} /></span>+</h2>
+                    <h2>
+                      <span class="odometer" data-count="29">
+                        <CountUp end={15} />
+                      </span>
+                      +
+                    </h2>
                     <p>YEARS OF EXPERIENCE</p>
                   </div>
                 </div>
@@ -125,14 +153,21 @@ export default function Home() {
                 <div class="about-content">
                   <div class="section-title">
                     <span class="wow fadeInUp">About Our Company</span>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">The best view comes after the hardest climbs. </h2>
+                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                      The best view comes after the hardest climbs.{" "}
+                    </h2>
                   </div>
                   <p class="wow fadeInUp mt-4 mt-md-0" data-wow-delay=".5s">
-                    We are confident that with the proper guidance and resources, all dreams can turn into reality. Our purpose is to equip you with the resources, information, and expertise required to transform your aspirations into real success.
+                    We are confident that with the proper guidance and
+                    resources, all dreams can turn into reality. Our purpose is
+                    to equip you with the resources, information, and expertise
+                    required to transform your aspirations into real success.
                   </p>
                   <div class="about-sideber wow fadeInUp" data-wow-delay=".3s">
                     <h5>
-                      Create unforgettable moments of adventure, where the itinerary is tailored to your dreams and every destination brings new horizons of discovery.”
+                      Create unforgettable moments of adventure, where the
+                      itinerary is tailored to your dreams and every destination
+                      brings new horizons of discovery.”
                     </h5>
                   </div>
                 </div>
@@ -141,8 +176,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
 
       <TestimonialSection />
 
@@ -166,47 +199,87 @@ export default function Home() {
               <div className="faq-items style-2">
                 <div className="faq-accordion">
                   <Accordion defaultActiveKey="0" id="accordion2">
-
-                    <Accordion.Item eventKey="0" className="accordion-item wow fadeInUp" data-wow-delay=".2s">
-                      <Accordion.Header>What are the different fare types offered by American Airlines?</Accordion.Header>
-                      <Accordion.Body className="accordion-body">
-                        American Airlines offers different fare types like Basic Economy and the Main Cabin. Basic Economy is the lowest of all fares available. It has some specific limitations regarding seats, refunds, and more. Whereas Main Cabin offers those privileges.
-                      </Accordion.Body>
-                    </Accordion.Item>
-
-                    <Accordion.Item eventKey="1" className="accordion-item wow fadeInUp" data-wow-delay=".4s">
-                      <Accordion.Header>Why does Spirit Airlines Charge Such Low Fares?</Accordion.Header>
-                      <Accordion.Body className="accordion-body">
-                        The Ultra-low-cost fares from Spirit Airlines are at the extremely low end. But Spirit charges for every other facility such as seat selection, carry-on bags, drinks, and more. The very low fare leaves it to the passengers to pay for whatever services they want to incur. This keeps their ticket prices a little low.
-                      </Accordion.Body>
-                    </Accordion.Item>
-                    <Accordion.Item eventKey="2" className="accordion-item wow fadeInUp" data-wow-delay=".6s">
-                      <Accordion.Header>Are United Airlines Flight Tickets refundable? </Accordion.Header>
-                      <Accordion.Body className="accordion-body">
-                        United Airlines Refunds depend on the fare type purchased during booking. Non-refundable fares are usually not refunded unless a cancellation is due to something on the part of the airline. Otherwise, travelers may get a travel credit or reschedule without any fee in some cases, especially with flexible fares or if they cancel within a given time window.
-                      </Accordion.Body>
-                    </Accordion.Item>
-
-                    <Accordion.Item eventKey="3" className="accordion-item wow fadeInUp" data-wow-delay=".7s">
-                      <Accordion.Header>Is there any fare charge for checked bags?
+                    <Accordion.Item
+                      eventKey="0"
+                      className="accordion-item wow fadeInUp"
+                      data-wow-delay=".2s"
+                    >
+                      <Accordion.Header>
+                        How do I find flight deals on FareLobby?
                       </Accordion.Header>
                       <Accordion.Body className="accordion-body">
-                        Southwest Airlines features initial two checked bags for free which is an advantage to passengers. It also offers many customer-friendly policies, although one may still have to pay extra charges for overweight or oversized luggage.
+                        Get in touch with our experts at (855) 497-3456, and ask
+                        about the available flight deals and discounts. Find the
+                        best deal as per your travel plan, and save on your next
+                        flight booking.
+                      </Accordion.Body>
+                    </Accordion.Item>
 
+                    <Accordion.Item
+                      eventKey="1"
+                      className="accordion-item wow fadeInUp"
+                      data-wow-delay=".4s"
+                    >
+                      <Accordion.Header>
+                        Can I choose my seat when booking flight tickets?
+                      </Accordion.Header>
+                      <Accordion.Body className="accordion-body">
+                        Yes, almost all airlines allow you to choose your
+                        desired seat, except some, when making a booking. Look
+                        for the “Seat Selection” option to reserve your
+                        preferred seat on the flight.
+                      </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item
+                      eventKey="2"
+                      className="accordion-item wow fadeInUp"
+                      data-wow-delay=".6s"
+                    >
+                      <Accordion.Header>
+                        What baggage is included in my fare type?{" "}
+                      </Accordion.Header>
+                      <Accordion.Body className="accordion-body">
+                        The baggage allowance varies based on different airlines
+                        and their fare types. You must check out the particular
+                        airline’s baggage policy before packing your stuff.
+                      </Accordion.Body>
+                    </Accordion.Item>
 
+                    <Accordion.Item
+                      eventKey="3"
+                      className="accordion-item wow fadeInUp"
+                      data-wow-delay=".7s"
+                    >
+                      <Accordion.Header>
+                        How early should I reach the airport before my flight?
+                      </Accordion.Header>
+                      <Accordion.Body className="accordion-body">
+                        It is advised to reach the airport at least 2 hours
+                        before departure if you have booked a domestic flight.
+                        For international flights, it is recommended to be at
+                        the airport at least 3 hours prior to the scheduled
+                        departure. That way, you will have enough time for
+                        check-in, security checks, and other pre-flight
+                        procedures.
                       </Accordion.Body>
                     </Accordion.Item>
 
                     {/* FAQ Item 5 */}
-                    <Accordion.Item eventKey="4" className="accordion-item mb-0 wow fadeInUp" data-wow-delay=".8s">
-                      <Accordion.Header>Does Frontier Airlines offer Refundable Fares?
+                    <Accordion.Item
+                      eventKey="4"
+                      className="accordion-item mb-0 wow fadeInUp"
+                      data-wow-delay=".8s"
+                    >
+                      <Accordion.Header>
+                        Can I cancel my flight on FareLobby?
                       </Accordion.Header>
                       <Accordion.Body className="accordion-body">
-                        Tickets are non-refundable generally on Frontier Airlines. Additionally, at the booking time, an option called "Cancellation Protection" is introduced that allows flexibility in traveling. If you cancel or change your itinerary, this option can provide a refund or credit based on certain conditions that apply to it.
-
+                        Yes, you can cancel your flight easily with us. Just get
+                        in touch with our travel experts, and share your flight
+                        details. They will assist you immediately with the
+                        cancellation process.
                       </Accordion.Body>
                     </Accordion.Item>
-
                   </Accordion>
                 </div>
               </div>
@@ -284,7 +357,3 @@ export default function Home() {
     </>
   );
 }
-
-
-
-

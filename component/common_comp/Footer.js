@@ -23,7 +23,12 @@ const Footer = ({ contactRef }) => {
                                         <a href="#" class="footer-logo">
                                             <img src="/img/logo/colour-logo.png" alt="img" class="img-logo" />
                                         </a>
+
+
+
                                     </div>
+                                    <p><b>Disclaimer: </b> 
+FareLobby is your one-stop platform to book flights at the lowest fares. Connect with our experts to find flights to your dream destination effortlessly. Please note that we are just a connection between airlines and customers. We don’t claim to be affiliated with any particular airline. We will help you connect to your destination for less. Book your tickets on FareLobby, and travel the world for less.</p>
                                     <div class="footer-content">
 
                                         <div class="social-icon">
@@ -60,6 +65,9 @@ const Footer = ({ contactRef }) => {
 
                                         <li>
                                             <a href="/contact-us">Contact Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="/privacy-policy">Privacy Policy</a>
                                         </li>
 
                                     </ul>
@@ -110,8 +118,8 @@ const Footer = ({ contactRef }) => {
                             </p>
                             <ul class="footer-menu wow fadeInUp" data-wow-delay=".5s">
                                 <li>
-                                    <a href="#">
-                                        Privacy
+                                    <a href="/privacy-policy">
+                                        Privacy Policy
                                     </a>
                                 </li>
                                 <li>
