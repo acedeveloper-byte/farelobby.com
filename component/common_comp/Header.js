@@ -42,7 +42,7 @@ const Header = ({ sectionRef, contactRef, blogRef }) => {
                                                 <li class="has-dropdown menu-thumb">
                                                     <a href="#" class="text-decoration-none" onClick={() => scrollToSection()}>
                                                         About Us
-                                                        <i class="fas fa-chevron-down"></i>
+                                                     
                                                     </a>
                                                 </li>
                                                 <li class="has-dropdown menu-thumb">

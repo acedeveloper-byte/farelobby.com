@@ -49,8 +49,7 @@ export default function Home() {
                     data-delay="1.5s"
                     className="text-white"
                   >
-                    <span class="shape-text text-white">Explore</span>
-                    <span className="text-white">The</span> <br /> Global Worlds
+                    Explore The Global Worlds
                   </h1>
                   <p
                     data-animation="fadeInUp"
