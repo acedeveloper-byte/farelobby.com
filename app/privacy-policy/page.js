@@ -129,21 +129,21 @@ const page = () => {
 
                   <ul className="custom-list">
                     <li>
-                      <b>Airlines:</b> For the purpose of commencing and
+                      <b>Airlines: </b> For the purpose of commencing and
                       completing your flight bookings.
                     </li>
                     <li>
-                      <b>Payment Processors:</b>To facilitate secure payments
+                      <b>Payment Processors:</b> To facilitate secure payments
                       for booking transactions.
                     </li>
 
                     <li>
-                      <b>Service Providers:</b>For assistance in customer
+                      <b>Service Providers:</b> For assistance in customer
                       support, website functionality improvement, data analysis,
                       etc.
                     </li>
                     <li>
-                      <b>Government Authorities:</b>If lawfully applicable, as
+                      <b>Government Authorities:</b> If lawfully applicable, as
                       in instances for ID verification or fulfilling legal
                       obligations.
                     </li>
@@ -173,7 +173,7 @@ const page = () => {
                   </li>
                   <ul className="custom-list">
                     <li>
-                      <b>Withdrawal from Marketing Communications:</b>You have
+                      <b>Withdrawal from Marketing Communications:</b> You have
                       the option to withdraw from receiving promotional emails
                       by clicking on the “unsubscribe” link in our emails.
                       Alternatively, you may communicate with us directly to be
@@ -181,8 +181,7 @@ const page = () => {
                     </li>
 
                     <li>
-                      <b>Accessing and Updating Account Information:</b>{" "}
-                      Customers can request to examine and amend any records
+                      <b>Accessing and Updating Account Information: </b> Customers can request to examine and amend any records
                       that we hold regarding them.
                     </li>
 
