@@ -35,12 +35,12 @@ const Header = ({ sectionRef, contactRef, blogRef }) => {
                                         <nav id="mobile-menu">
                                             <ul>
                                                 <li class="has-dropdown menu-thumb">
-                                                    <a href="#" class="text-decoration-none">
+                                                    <a href="https://www.farelobby.com/" class="text-decoration-none">
                                                         Home
                                                     </a>
                                                 </li>
                                                 <li class="has-dropdown menu-thumb">
-                                                    <a href="#" class="text-decoration-none" onClick={() => scrollToSection()}>
+                                                    <a href="/about-us" class="text-decoration-none" onClick={() => scrollToSection()}>
                                                         About Us
                                                      
                                                     </a>

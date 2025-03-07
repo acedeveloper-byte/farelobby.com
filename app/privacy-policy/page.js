@@ -5,8 +5,7 @@ import Header from "@/component/common_comp/Header";
 import React, { useRef } from "react";
 import "../globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import 'bootstrap-icons/font/bootstrap-icons.css';
-
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const page = () => {
   const sectionRef = useRef();
@@ -40,32 +39,14 @@ const page = () => {
                   <span class="wow fadeInUp">Privacy Policy - FareLobby</span>
                 </div>
                 <p>
-                  Your privacy is important for us at FareLobby, that’s why we
+                  Your privacy is important to us at FareLobby, that’s why we
                   have put systems in place to protect your information. This
-                  policy outlines how we gather, use and secures your
+                  policy outlines how we gather, use, and secure your
                   information while booking your flight using our website's
                   service.
                 </p>
-                <ul className="custom-list">
-                  <li>
-                    These cookies are necessary for our website to work on your
-                    device. They assist you in using services such as booking
-                    forms and navigating our website.
-                  </li>
-                  <li>
-                    Performance Cookies: These cookies are intended to gather
-                    information about your usage of our website so that you can
-                    enhance both its overall functionality and user experience.
-                  </li>
-                  <li>
-                    {" "}
-                    Cookies from third parties on our website that target
-                    advertisements based on your browsing history are known as
-                    advertising cookies
-                  </li>{" "}
-                </ul>
 
-                <ol >
+                <ol>
                   <li>
                     <b>Information We Collect</b>
                   </li>
@@ -110,83 +91,141 @@ const page = () => {
                   <p>
                     The information collected is used for the purposes below:
                   </p>
-<ul className="custom-list">
-                  <li>
-                    To assist you, if further communication is needed concerning
-                    your purchase which includes informing you about bookings
-                    reminders and automatic booking confirmations.
-                  </li>
-                  <li>
-                    To improve our website and services, including analyzing
-                    user behavior and preferences.
-                  </li>
-                  <li>
-                    To send you marketing communications, special offers, and
-                    promotions related to flight bookings, unless you have opted
-                    out of such communications.
-                  </li>
-                  <li>
-                    To provide customer support and address any inquiries or
-                    issues related to your flight bookings.
-                  </li>
-                  <li>
-                    To provide customer support and address any inquiries or
-                    issues related to your flight bookings.
-                  </li>
-
+                  <ul className="custom-list">
+                    <li>
+                      To assist with the processes in bookings and payment
+                      transactions for flights.
+                    </li>
+                    <li>
+                      To assist you if further communication is needed
+                      concerning your purchase which includes informing you
+                      about booking reminders and automatic booking
+                      confirmations.
+                    </li>
+                    <li>
+                      To improve our website and services, including analyzing
+                      user behavior and preferences.
+                    </li>
+                    <li>
+                      To send you marketing communications, special offers, and
+                      promotions related to flight bookings, unless you have
+                      opted out of such communications.
+                    </li>
+                    <li>
+                      To provide customer support and address any inquiries or
+                      issues related to your flight bookings.{" "}
+                    </li>
+                    <li>To comply with legal and regulatory requirements.</li>
                   </ul>
+
                   <li>
                     <b>Sharing of Your Personal Details</b>
                   </li>
+
                   <p>
                     FareLobby is permitted to disclose your personal information
                     to the below named third parties:
                   </p>
 
-                 <ul className = "custom-list" >
-                    <li><b>Airlines:</b> For the purpose of commencing and completing your flight bookings.</li>
-                    <li><b>Payment Processors: 
-                    </b>To facilitate secure payments for booking transactions.</li>
-
-                    <li><b>Service Providers:</b>For assistance in customer support, website functionality improvement, data analysis, etc.
+                  <ul className="custom-list">
+                    <li>
+                      <b>Airlines:</b> For the purpose of commencing and
+                      completing your flight bookings.
                     </li>
-<li><b>Government Authorities:</b>If lawfully applicable, as in instances for ID verification or fulfilling legal obligations.</li>
-<p>We do not promote, sell, or furnish your personal information to any entity for advertising purposes without your consent.
-</p>
-                 </ul>
+                    <li>
+                      <b>Payment Processors:</b>To facilitate secure payments
+                      for booking transactions.
+                    </li>
 
-<li><b>Protection Of Information</b></li>
-<p>At FareLobby, protecting your personal information is one of our core commitments and as such, we strive to employ the requisite technical and organizational policies to prevent unauthorized access, destruction, disclosure, or modification of information. Due to the absence of a fully secure way of transmitting information over the internet or storing it electronically, we are not able to provide full security guarantees.
-</p>
+                    <li>
+                      <b>Service Providers:</b>For assistance in customer
+                      support, website functionality improvement, data analysis,
+                      etc.
+                    </li>
+                    <li>
+                      <b>Government Authorities:</b>If lawfully applicable, as
+                      in instances for ID verification or fulfilling legal
+                      obligations.
+                    </li>
+                    <p>
+                      We do not promote, sell, or furnish your personal
+                      information to any entity for advertising purposes without
+                      your consent.
+                    </p>
+                  </ul>
 
-<li>
-    <b>Your Rights and Your choices </b></li>
-<ul className="custom-list">
-    <li><b>Withdrawal from Marketing Communications:</b> You have the option to withdraw from receiving promotional emails by clicking on the “unsubscribe” link in our emails. Alternatively, you may communicate with us directly to be removed from the email list.
-    </li>
+                  <li>
+                    <b>Protection Of Information</b>
+                  </li>
+                  <p>
+                    At FareLobby, protecting your personal information is one of
+                    our core commitments and as such, we strive to employ the
+                    requisite technical and organizational policies to prevent
+                    unauthorized access, destruction, disclosure, or
+                    modification of information. Due to the absence of a fully
+                    secure way of transmitting information over the Internet or
+                    storing it electronically, we are not able to provide full
+                    security guarantees.
+                  </p>
 
-    <li><b>Accessing and Updating Account Information:</b> Customers can request to examine and amend any records that we hold regarding them.
-    </li>
-    
-    <li><b>Data Deletion:</b> Customers are able to obtain the deletion of their private data if they reach us. Keep in mind that for some purposes, FareLobby might need to retain some information in order to satisfy legal requirements or finish other business obligations.
-    </li>
-</ul>
+                  <li>
+                    <b>Your Rights and Your choices </b>
+                  </li>
+                  <ul className="custom-list">
+                    <li>
+                      <b>Withdrawal from Marketing Communications:</b>You have
+                      the option to withdraw from receiving promotional emails
+                      by clicking on the “unsubscribe” link in our emails.
+                      Alternatively, you may communicate with us directly to be
+                      removed from the email list.
+                    </li>
 
+                    <li>
+                      <b>Accessing and Updating Account Information:</b>{" "}
+                      Customers can request to examine and amend any records
+                      that we hold regarding them.
+                    </li>
 
-<li><b>Third-Party Websites 
-</b></li>
-<p>FareLobby does not make any claims about the information contained on other sites. External services and/or sites may, at their discretion, include links to FareLobby. farelobby.com holds no responsibility for the safeguarding of your data on these sites and recommends clients to analyze the terms of data collection from these external sites, which may include personal information prior to this.
-</p>
+                    <li>
+                      <b>Data Deletion:</b> Customers are able to obtain the
+                      deletion of their private data if they reach us. Keep in
+                      mind that for some purposes, FareLobby might need to
+                      retain some information in order to satisfy legal
+                      requirements or finish other business obligations.
+                    </li>
+                  </ul>
 
+                  <li>
+                    <b>Third-Party Websites</b>
+                  </li>
+                  <p>
+                    FareLobby does not make any claims about the information
+                    contained on other sites. External services and/or sites
+                    may, at their discretion, include links to FareLobby.
+                    farelobby.com holds no responsibility for the safeguarding
+                    of your data on these sites and recommends clients to
+                    analyze the terms of data collection from these external
+                    sites, which may include personal information prior to this.
+                  </p>
 
-<li><b>Changes to This Privacy Policy</b></li>
-<p>FareLobby reserves the right to update this Privacy Policy at any time. When we do, it will be effective immediately after posting. We encourage you to periodically review this page for any updates.
-</p>
+                  <li>
+                    <b>Changes to This Privacy Policy</b>
+                  </li>
+                  <p>
+                    FareLobby reserves the right to update this Privacy Policy
+                    at any time. When we do, it will be effective immediately
+                    after posting. We encourage you to periodically review this
+                    page for any updates.
+                  </p>
 
-<li><b>Contact Us</b></li>
-<p>If you have any questions or concerns about this Privacy Policy or our practices, please contact us at: +1 (855) 497-3456. 
-</p>
-
+                  <li>
+                    <b>Contact Us</b>
+                  </li>
+                  <p>
+                    If you have any questions or concerns about this Privacy
+                    Policy or our practices, please contact us at: +1 (855)
+                    497-3456.
+                  </p>
                 </ol>
               </div>
             </div>

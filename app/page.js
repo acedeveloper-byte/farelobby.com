@@ -50,6 +50,8 @@ export default function Home() {
                     className="text-white"
                   >
                     Explore The Global Worlds
+                    {/* <span class="shape-text text-white">Explore</span>
+                    <span className="text-white">The</span> <br /> Global Worlds */}
                   </h1>
                   <p
                     data-animation="fadeInUp"

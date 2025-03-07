@@ -16,7 +16,7 @@ export const metadata = {
   description: "Farelobby",
 };
 
-export default function PrivacyLayout({ children }) {
+export default function AboutLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
