@@ -10659,3 +10659,7 @@ border-radius :  10px
   content: "\f269";
 }
 
+
+.section-padding {
+  padding: 75px 0 !important;
+}
