@@ -84,16 +84,14 @@ const Footer = ({ contactRef }) => {
                     </li>
                     <li>
                       <a href="/privacy-policy">Privacy Policy</a>
-                    </li>   
+                    </li>
                     <li>
-                      <a href="/terms-&-conditions">Terms & Conditions </a>
-                    </li>  
-                   
-
+                      <a href="/terms-and-conditions">Terms & Conditions </a>
+                    </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6" >
+              <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
                 <div class="footer-widget-items">
                   <div class="widget-title">
                     <h3>Legal Links</h3>
@@ -160,7 +158,7 @@ const Footer = ({ contactRef }) => {
                   <a href="/privacy-policy">Privacy Policy</a>
                 </li>
                 <li>
-                  <a href="/terms-&-conditions">Terms & Conditions</a>
+                  <a href="/terms-and-conditions">Terms & Conditions</a>
                 </li>
                 <li>
                   <a href="#">Site Map</a>
