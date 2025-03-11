@@ -1233,8 +1233,9 @@ p {
 }
 @media (max-width: 991px) {
   .header-top-section {
-    display: none;
+    display: block;
   }
+
 }
 
 .header-top-wrapper {
@@ -10662,4 +10663,67 @@ border-radius :  10px
 
 .section-padding {
   padding: 75px 0 !important;
+}
+
+
+/* Default: Hidden */
+.header__call-button {
+  display: none;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Icon Styling */
+.header__call-button i {
+  margin-right: 0;
+}
+
+/* Hover Effect */
+.header__call-button:hover {
+}
+
+/* Show on Mobile Devices (All Breakpoints) */
+@media (max-width: 1200px) { /* Extra Large Screens */
+  .header__call-button {
+      display: block;
+  }
+}
+
+@media (max-width: 992px) { /* Large Devices (Tablets) */
+  .header__call-button {
+      display: block;
+      width: 180px
+  }
+}
+
+@media (max-width: 768px) { /* Medium Devices (Small Tablets) */
+  .header__call-button {
+    width: 102px;
+    color: black;
+    display: flex;
+    align-items: end;
+    justify-content: end;  }
+}
+
+@media (max-width: 576px) { /* Small Devices (Phones) */
+  .header__call-button {
+    width: 102px;
+    color: black;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
+}
+
+@media (max-width: 400px) { /* Extra Small Phones */
+  .header__call-button {
+    width: 102px;
+    color: black;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
 }

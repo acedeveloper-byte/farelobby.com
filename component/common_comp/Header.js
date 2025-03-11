@@ -42,7 +42,7 @@ const Header = ({ sectionRef, contactRef, blogRef }) => {
                                                 <li class="has-dropdown menu-thumb">
                                                     <a href="/about-us" class="text-decoration-none" onClick={() => scrollToSection()}>
                                                         About Us
-                                                     
+
                                                     </a>
                                                 </li>
                                                 <li class="has-dropdown menu-thumb">
@@ -60,15 +60,14 @@ const Header = ({ sectionRef, contactRef, blogRef }) => {
                                     </div>
                                 </div>
 
-                                <div class="header__hamburger d-xl-none my-auto">
-                                    <div class="sidebar__toggle">
-                                        <div class="header-bar">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                    </div>
+                                <div class="header__call-button d-xl-none my-auto">
+                                    <a href="tel:+1(855) 497-3456" className="text-decoration-none text-black">
+                                        <i class="fas fa-phone-alt"></i> Call Now @
+                                        (855) 497-3456
+                                    </a>
                                 </div>
+
+
                             </div>
                         </div>
                     </div>
