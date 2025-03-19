@@ -66,8 +66,6 @@ const Header = ({ sectionRef, contactRef, blogRef }) => {
                                         (855) 497-3456
                                     </a>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
