@@ -18,9 +18,9 @@ export default function FlightSupport() {
     return (
         <>
             {modal && (
-                <div className="overlay position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center" style={{ background: 'rgba(0, 0, 0, 0.6)', backdropFilter: 'blur(8px)', zIndex: 1050 }}>
+                <div className="overlay position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center" style={{ background: 'rgba(0, 0, 0, 0.6)', backdropFilter: 'blur(8px)', zIndex: 999999 }}>
                     <div className="support-container bg-white rounded-4 shadow-lg p-4 position-relative" style={{ maxWidth: '500px', width: '90%' }}>
-                        <button className="btn-close position-absolute top-0 end-0 m-3" onClick={() => setModal(false)}>x</button>
+                        <button className="btn-close position-absolute top-0 end-0 m-3" onClick={() => setModal(false)}><i class="fa fa-close"></i></button>
                         <div className="text-center mb-3">
                             <Image src="/img/agent/call-girl.jpg" alt="Agent" width={80} height={80} className="rounded-circle border border-3" />
                             <h5 className="mt-3 fw-bold">Exclusive Flight Deals</h5>
