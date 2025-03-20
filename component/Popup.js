@@ -1,61 +1,63 @@
 'use client';
 
+import { useEffect, useState } from 'react';
+import { FaRandom, FaMoneyBill, FaCalendarAlt, FaTimesCircle, FaPhoneAlt } from 'react-icons/fa';
 import Image from 'next/image';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useEffect, useState } from 'react';
-import { FaRandom, FaMoneyBill, FaCalendarAlt, FaTimesCircle } from 'react-icons/fa';
 
 export default function FlightSupport() {
-    const [modal, setModal] = useState(false)
+    const [modal, setModal] = useState(false);
+
     useEffect(() => {
         setTimeout(() => {
-            setModal(true)
+            setModal(true);
         }, 2000);
         require('bootstrap/dist/js/bootstrap.bundle.min.js');
     }, []);
 
     return (
         <>
-            {modal && <div className="overlay d-flex justify-content-center align-items-center">
-                <div className="support-container row w-100 p-3 bg-white rounded shadow">
-                    <div className="col-md-5 col-12 call-section text-center bg-dark text-white p-4">
-                        <img src="/img/agent/call-girl.jpg" alt="Agent" width={80} height={80} className="rounded-circle mb-3" />
-                        <h6>Call us now for exclusive flight deals and continuous support.</h6>
-                        <div className="call-number bg-danger text-white d-inline-block p-2 rounded mt-2">
-                            <a href="tel:+1 (855) 497-3456" className="text-decoration-none text-white">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="US Flag" width={20} height={15} className="me-2" /> +1 855 497-3456
+            {modal && (
+                <div className="overlay position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center" style={{ background: 'rgba(0, 0, 0, 0.6)', backdropFilter: 'blur(8px)', zIndex: 1050 }}>
+                    <div className="support-container bg-white rounded-4 shadow-lg p-4 position-relative" style={{ maxWidth: '500px', width: '90%' }}>
+                        <button className="btn-close position-absolute top-0 end-0 m-3" onClick={() => setModal(false)}>x</button>
+                        <div className="text-center mb-3">
+                            <Image src="/img/agent/call-girl.jpg" alt="Agent" width={80} height={80} className="rounded-circle border border-3" />
+                            <h5 className="mt-3 fw-bold">Exclusive Flight Deals</h5>
+                            <p className="text-muted">Call us now for 24/7 support and amazing offers!</p>
+                        </div>
+
+                        <div className="call-button text-center mb-4">
+                            <a href="tel:+1 (855) 497-3456" className="btn btn-danger px-4 py-2 rounded-pill shadow-sm">
+                                <FaPhoneAlt className="me-2" /> +1 855 497-3456
                             </a>
                         </div>
-                    </div>
-                    <div className="col-md-7 col-12 offer-section text-center p-4">
-                        <h5>Explore the World with Our Special Flight Offers!</h5>
-                        <div className="row mt-3">
-                            <div className="col-6 mb-2" >
-                                <a href="tel:+1 (855) 497-3456" className="text-decoration-none text-white">
 
-                                    <span className="btn w-100 p-3 btn-light" style={{ background: "#FFD8D8 ", border: "none" }}><FaRandom /> Changes</span>
-                                </a>
+                        <div className="row g-3">
+                            <div className="col-6">
+                                <button className="btn w-100 py-3 rounded-3 text-dark" style={{ background: "#FFD8D8" }}>
+                                    <FaRandom className="me-2" /> Changes
+                                </button>
                             </div>
-                            <div className="col-6 mb-2" >
-                                <a href="tel:+1 (855) 497-3456" className="text-decoration-none text-white">
-                                    <span className="btn w-100 p-3 btn-light" style={{ background: "#D4E9F4", border: "none" }}><FaMoneyBill /> Refund / Cancellation</span>
-                                </a>
+                            <div className="col-6">
+                                <button className="btn w-100 py-3 rounded-3 text-dark" style={{ background: "#D4E9F4" }}>
+                                    <FaMoneyBill className="me-2" /> Refund
+                                </button>
                             </div>
-                            <div className="col-6 mb-2">
-                                <a href="tel:+1 (855) 497-3456" className="text-decoration-none text-white">
-                                    <span className="btn w-100 p-3 btn-light" style={{ background: "#DCDCDC", border: "none" }}><FaCalendarAlt /> Reservation</span>
-                                </a>
+                            <div className="col-6">
+                                <button className="btn w-100 py-3 rounded-3 text-dark" style={{ background: "#DCDCDC" }}>
+                                    <FaCalendarAlt className="me-2" /> Reservation
+                                </button>
                             </div>
-                            <div className="col-6 mb-2">
-                                <a href="tel:+1 (855) 497-3456" className="text-decoration-none text-white">
-                                    <button className="btn w-100 p-3 btn-light" style={{ background: "#FFCFC6", border: "none" }}><FaTimesCircle /> Cancellation</button>
-                                </a>
+                            <div className="col-6">
+                                <button className="btn w-100 py-3 rounded-3 text-dark" style={{ background: "#FFCFC6" }}>
+                                    <FaTimesCircle className="me-2" /> Cancellation
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>}
+            )}
         </>
-
     );
 }
